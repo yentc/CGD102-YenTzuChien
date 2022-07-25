@@ -1,0 +1,535 @@
+@charset "UTF-8";
+
+
+/* --------------------共通部分---------------------- */
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+body{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.backgroundPic{
+    width: 100%;
+    max-height: 6000px;
+    background-image: url('https://img.onl/Z6aMeM');
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+
+:root{
+    --BTN-color:#FF1A51;
+    --blue-color:#002B51;
+    --red-color:#FF715C;
+    --skyBlue-color:#74CADD;
+    --gray-color:#575757;
+    --yellow-color:#FFC43D;
+}
+h3::after{
+    content: url('https://img.onl/s2SI1c');
+    padding: 0px 0px 5px 5px;
+}
+/* h3::before{
+    content: url('https://img.onl/l8RN9P');
+    padding: 0px 5px 5px 0px;
+} */
+/* ----------------------------header-------------------------------- */
+.logo{
+    display:block;
+    background-size: contain;
+    height: 40px;
+    padding: 10px 0px 10px 0px;
+}
+.page-header{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 2px 3px rgba(48, 48, 48, 0.252);
+}
+.page-header-base{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.main-ul{
+    display: flex;
+}
+.main-ul .li-space{
+    margin-left: 140px;
+    visibility: hidden;
+}
+.main-ul li{
+    padding: 10px;
+    cursor:pointer;
+    margin-left: 50px;
+}
+.main-ul li:nth-child(1){
+    border-bottom: var(--red-color) 2px solid;
+}
+.main-ul li:nth-of-type(1) a{
+    color: var(--red-color);
+}
+.main-ul li:hover{
+    border-bottom: var(--red-color) 2px solid;
+}
+.main-ul li:hover a{
+    color: var(--red-color);
+}
+.main-ul a{
+    display: block;
+    color: var(--blue-color);
+    font-weight: 600;
+}
+.main-ul .log-in{
+    border: var(--blue-color) 1px solid;
+    background-color: white;
+    border-radius: 10px;
+}
+.main-ul .log-in:hover{
+    border: var(--blue-color) 1px solid;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.200);
+}
+.main-ul .log-in:hover a{
+    color: var(--blue-color);
+}
+.main-ul .sign-up{
+    border: var(--BTN-color) 1px solid;
+    border-radius: 10px;
+    background-color: var(--BTN-color);
+    margin-left: 30px;
+}
+.main-ul .sign-up:hover{
+    border: var(--BTN-color) 1px solid;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.200);
+}
+.main-ul .sign-up a{
+    color: white;
+}
+.main-ul .sign-up:hover a{
+    color: white;
+}
+/* ----------------------------main-------------------------------- */
+main{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ----------------------------banner-------------------------------- */
+.main-banner{
+    max-width: 1200px;
+    text-align: center;
+}
+.main-banner h2{
+    font-size: 36px;
+    padding: 100px 0px 25px 0px;
+    font-weight: 600;
+    color: var(--blue-color);
+}
+.main-banner p{
+    font-size: 16px;
+    padding: 0px 0px 0px 20px;
+    color: var(--gray-color);
+    line-height: 40px;
+    font-weight: 600;
+}
+.main-banner picture img{
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ----------------------------Step 1 建立帳號-------------------------------- */
+.RMP-login{
+    max-width: 1200px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 100px 0px 0px 0px;
+}
+.txtArea{
+    width: 390px;
+}
+.txtArea .step{
+    font-size: 28px;
+    padding: 50px 0px 10px 0px;
+    color: var(--blue-color);
+    line-height: 40px;
+    font-weight: 600;
+}
+.txtArea h3{
+    font-size: 28px;
+    padding: 0px 0px 10px 0px;
+    color: var(--blue-color);
+    line-height: 40px;
+    font-weight: 600;
+}
+.txtArea p{
+    font-size: 16px;
+    padding: 0px 0px 50px 0px;
+    color: var(--gray-color);
+    line-height: 40px;
+    font-weight: 600;
+}
+.txtArea button{
+    padding: 10px 25px 10px 25px;
+    background-color: var(--BTN-color);
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: var(--blue-color) 0px 2px 0px;
+    cursor: pointer;
+}
+.txtArea button:hover{
+    transform: scale(1.03);
+    box-shadow: var(--blue-color) 0px 3px 0px;
+}
+.RMP-login img{
+    display: block;
+}
+/* ----------------------------Step 2 創建日記-------------------------------- */
+.RMP-newDiary{
+    max-width: 1200px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 100px 0px 0px 0px;
+}
+.RMP-newDiary .txtArea{
+    width: 390px;
+}
+.RMP-newDiary .txtArea .step{
+    font-size: 28px;
+    padding: 50px 0px 10px 0px;
+    color: var(--blue-color);
+    line-height: 40px;
+    font-weight: 600;
+}
+.RMP-newDiary .txtArea h3{
+    font-size: 28px;
+    padding: 0px 0px 10px 0px;
+    color: var(--blue-color);
+    line-height: 40px;
+    font-weight: 600;
+}
+.RMP-newDiary .txtArea p{
+    font-size: 16px;
+    padding: 0px 0px 50px 0px;
+    color: var(--gray-color);
+    line-height: 40px;
+    font-weight: 600;
+}
+.RMP-newDiary img{
+    display: block;
+}
+/* ----------------------------Step 3 選取心情、天氣、飲食...等等-------------------------------- */
+.RMP-writeDiary{
+    max-width: 1200px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 100px 0px 0px 0px;
+}
+.RMP-writeDiary .txtArea{
+    width: 390px;
+}
+.RMP-writeDiary .txtArea .step{
+    font-size: 28px;
+    padding: 50px 0px 10px 0px;
+    color: var(--blue-color);
+    line-height: 40px;
+    font-weight: 600;
+}
+.RMP-writeDiary .txtArea h3{
+    font-size: 28px;
+    padding: 0px 0px 10px 0px;
+    color: var(--blue-color);
+    line-height: 40px;
+    font-weight: 600;
+}
+.RMP-writeDiary .txtArea p{
+    font-size: 16px;
+    padding: 0px 0px 50px 0px;
+    color: var(--gray-color);
+    line-height: 40px;
+    font-weight: 600;
+}
+.RMP-writeDiary img{
+    display: block;
+}
+/* ----------------------------Step 4 月數據統計/表單匯出-------------------------------- */
+.RMP-statistics{
+    max-width: 1200px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 100px 0px 0px 0px;
+}
+.RMP-statistics .txtArea{
+    width: 390px;
+}
+.RMP-statistics .txtArea .step{
+    font-size: 28px;
+    padding: 50px 0px 10px 0px;
+    color: var(--blue-color);
+    line-height: 40px;
+    font-weight: 600;
+}
+.RMP-statistics .txtArea h3{
+    font-size: 28px;
+    padding: 0px 0px 10px 0px;
+    color: var(--blue-color);
+    line-height: 40px;
+    font-weight: 600;
+}
+.RMP-statistics .txtArea p{
+    font-size: 16px;
+    padding: 0px 0px 50px 0px;
+    color: var(--gray-color);
+    line-height: 40px;
+    font-weight: 600;
+}
+.RMP-statistics img{
+    display: block;
+}
+/* ----------------------------Step 5 線上諮詢-------------------------------- */
+.RMP-consult{
+    max-width: 1200px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 100px 0px 0px 0px;
+}
+.RMP-consult .txtArea{
+    width: 390px;
+}
+.RMP-consult .txtArea .step{
+    font-size: 28px;
+    padding: 50px 0px 10px 0px;
+    color: var(--blue-color);
+    line-height: 40px;
+    font-weight: 600;
+}
+.RMP-consult .txtArea h3{
+    font-size: 28px;
+    padding: 0px 0px 10px 0px;
+    color: var(--blue-color);
+    line-height: 40px;
+    font-weight: 600;
+}
+.RMP-consult .txtArea p{
+    font-size: 16px;
+    padding: 0px 0px 50px 0px;
+    color: var(--gray-color);
+    line-height: 40px;
+    font-weight: 600;
+}
+.RMP-consult img{
+    display: block;
+}
+.RMP-consult button{
+    padding: 10px 25px 10px 25px;
+    background-color: var(--skyBlue-color);
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: var(--blue-color) 0px 2px 0px;
+    cursor: pointer;
+}
+
+/* -----------------------------準備開始寫日記------------------------------ */
+.content-AD{
+    max-width: 1200px;;
+}
+.AD-bgp{
+    max-width: 100%;
+    padding: 0px 0px 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.AD-bgp img{
+    max-width: 75%;
+}
+.AD-txt{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.AD-txt h2{
+    font-size: 36px;
+    padding: 130px 0px 20px 0px;
+    font-weight: 600;
+    color: var(--blue-color);
+}
+.AD-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border: 0px;
+    padding: 0px;
+}
+.AD-btn .BTN{
+    padding: 12px 30px 12px 30px;
+    border-radius: 10px;
+    background-color: var(--BTN-color);
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0px 5px 0px var(--blue-color);
+    
+}
+.AD-btn:hover .BTN{
+    transform: scale(1.03);
+    box-shadow: 0px 6px 0px var(--blue-color);
+}
+.AD-btn:active .BTN{
+    transform: scale(1);
+}
+/* -----------------------------footer------------------------------ */
+footer{
+    width: 100%;
+    background-color: var(--blue-color);
+}
+.footerBase{
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0px 0px 0px;
+}
+.iconItem{
+    box-sizing: border-box;
+    padding: 30px 30px 30px 50px;
+}
+.iconItem .logoPic{
+    width: 150px;
+    margin-bottom: 30px;
+}
+.iconItem .logoPic img{
+    display: block;
+}
+.socialPic{
+    display: flex;
+    justify-content: space-between;
+}
+.socialPic .pic{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+}
+.contactItem{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    padding: 30px;
+}
+.contactItem .item{
+    font-size: 16px;
+    padding: 0px 0px 25px 50px;
+    color: white;
+}
+.contactItem .item.title{
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+.contactItem .item a{
+    color: white;
+    padding-bottom: 5px;
+    font-size:16px;
+}
+.contactItem .item a:hover{
+    border-bottom: var(--red-color) 2px solid;
+}
+.MenuItem{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    padding: 30px;
+}
+.MenuItem .menu{
+    font-size: 16px;
+    padding: 0px 0px 25px 80px;
+    color: white;
+}
+.MenuItem .menu.title{
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+.MenuItem .menu a{
+    color: white;
+    padding-bottom: 5px;
+}
+.MenuItem .menu a:hover{
+    border-bottom: var(--red-color) 2px solid;
+}
+.LogItem{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    padding: 30px 50px 30px 390px;
+}
+.LogItem .log{
+    font-size: 1ˊpx;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.LogItem .log a{
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    background-color: var(--BTN-color);
+}
+.LogItem .log a:hover{
+    border-bottom: var(--yellow-color) 3px solid;
+}
+.statement{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    border-top: white 1px solid;
+    padding: 15px 0px 10px 0px;
+    font-size: 14px;
+}
+.statement a{
+    color: white;
+    font-size: 14px;
+}
+.statement a:hover{
+    color: var(--yellow-color);
+}
+.copyRight{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    padding: 5px 0px 15px 0px;
+}
