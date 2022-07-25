@@ -213,7 +213,7 @@ main{
 }
 .content-Popular .Popular-list .txtArea .title{
     display: block;
-    padding: 50px 0px 3px 0px;
+    padding: 25px 0px 3px 0px;
     color: var(--blue-color);
     font-size: 24px;
     font-weight: 600;
@@ -250,7 +250,7 @@ main{
     transform: scale(1);
 }
 .content-Popular .Popular-list picture{
-    max-width: 500px;
+    max-width: 400px;
     padding: 30px 20px 20px 100px;
 }
 .content-Popular .Popular-list picture img{
