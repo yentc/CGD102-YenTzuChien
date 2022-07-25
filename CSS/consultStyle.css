@@ -313,7 +313,7 @@ main{
 }
 .content-team button{
     padding: 10px 25px 10px 25px;
-    background-color: var(--red-color);
+    background-color: var(--skyBlue-color);
     box-shadow: var(--blue-color) 0px 2px 0px;
     border: 0px;
     border-radius: 5px;
