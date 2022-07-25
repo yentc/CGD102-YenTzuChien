@@ -250,7 +250,7 @@ main{
     transform: scale(1);
 }
 .content-Popular .Popular-list picture{
-    max-width: 400px;
+    max-width:400px;
     padding: 30px 20px 20px 100px;
 }
 .content-Popular .Popular-list picture img{
