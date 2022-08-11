@@ -980,7 +980,7 @@ button.slick-next.slick-arrow{
 }
 .MenuItem .menu.title{
     width: 100%;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     color: white;
 }
@@ -1006,7 +1006,7 @@ button.slick-next.slick-arrow{
 }
 .contactItem .item.title{
     width: 100%;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     color: white;
 }
@@ -1020,6 +1020,7 @@ button.slick-next.slick-arrow{
 }
 .LogItem{
     display: flex;
+    height: 80%;
     flex-wrap: wrap;
     padding: 20px 0px 0px 0px;
 }
@@ -1072,4 +1073,60 @@ button.slick-next.slick-arrow{
 }
 .footer_bottom{
     margin-top: 30px;
+}
+/*====== 行動版 RWD | 320px ~ 768px ======*/
+@media screen and (min-width: 320px) and (max-width: 767.98px){
+.footer_inner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.MenuItem{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0px 30px 50px ;
+}
+.contactItem{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0px 30px 50px ;
+}
+.LogItem{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
+}
+.LogItem .log{
+    width: 50%;
+    margin: 0px 0px 20px 50px ;
+}
+.LogItem .log.in{
+    margin: 0px 0px 50px 50px ;
+}
+.statement{
+    padding: 30px 30px 10px 30px;
+    line-height: 24px;
+
+}
+}
+/*====== 行動版 RWD | 768px ~ 1200px ======*/
+@media screen and (min-width: 768px) and (max-width: 1199.98px){
+.iconItem{
+    padding: 30px 100px 30px 50px;
+}
+.MenuItem{
+    width: 30%;
+}
+.LogItem{
+    padding: 20px 15px 0px 0px;
+}
+.statement{
+    padding: 20px 30px 10px 30px;
+    line-height: 24px;
+
+}
 }
