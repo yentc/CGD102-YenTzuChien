@@ -7,327 +7,433 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     <title>Mooding-情緒追蹤網站</title>
     <link rel="stylesheet" href="./CSS/reset.css">
-    <link rel="stylesheet" href="./CSS/home-style.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/gobal.css">
+    <link rel="stylesheet" href="./CSS/hamburgers.css">
+    <link rel="stylesheet" href="./CSS/slick.css">
+    <link rel="stylesheet" href="./CSS/slick-theme.css">
+
 </head>
 <body>
     <div class="backgroundPic"><!-------背景圖-------->
-        <header class="page-header"> <!-------導覽列-------->
-            <div class="page-header-base">
-                <h1><a href="./Index.html"><img class="logo" src="./images/LOGO.svg" alt="Mooding-情緒追蹤網站"></a></h1>
-            <nav>
-                <ul class="main-ul">
-                    <li><a href="./LiveDiary.html">線上日記</a></li>
-                    <li><a href="./Consult.html">諮商服務</a></li>
-                    <li><a href="./test.html">心理量表</a></li>
-                    <li><a href="./Article.html">精選文章</a></li>
-                    <li class="li-space"></li>
-                    <li class="log-in"><a href="">登入</a></li>
-                    <li class="sign-up"><a href="">註冊</a></li>
-                </ul>
-            </nav>
+        <header class="page_header dropdowns"><!-------導覽列-------->
+            <div class="header_inner">
+                <a href="./index.html" class="header_logo">
+                    <img src="./images/LOGO.svg" alt="">
+                </a>
+                <div class="header_navigation" id="nav">
+                    <nav class="header_navigation_nav">
+                        <ul class="header_navigation_list"><!-------選單li區-------->
+                            <li class="header_navigation_item">
+                                <a href="./LiveDiary.html">如何開始</a></li>
+                            <li class="header_navigation_item">
+                                <a href="./Consult.html">諮商服務</a></li>
+                            <li class="header_navigation_item">
+                                <a href="./test.html">心理量表</a></li>
+                            <li class="header_navigation_item">
+                                <a href="./Article.html">精選文章</a></li>
+                        </ul>
+                        <div class="header_navigation_btnArea"><!-------登入註冊區-------->
+                            <button class="header_navigation_log-in">登入</button>
+                            <button class="header_navigation_sign-up">註冊</button>
+                        </div>
+                    </nav>
+                </div>
+                <button class="hamburger hamburger--collapse" type="button"><!-------漢堡按鈕-------->
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
             </div>
-        </header>
-        <main>
-            <section class="main-banner"><!-------banner------->
-                <div class="mb-txt">
-                    <div class="txt">
-                        <h2>輕鬆上手的情緒追蹤網站</h2>
-                        <p>每個月總有幾天心情不好，但不知道是什麼原因導致嗎?
+        </header><!-------導覽列end-------->
+        <main class="main_home"><!------main中間大區塊------>
+            <section class="main_banner"><!------banner------>
+                <div class="main_banner_inner">
+                    <div class="main_banner_left">
+                        <h1 class="main_banner_slogan">輕鬆上手<span class="small">的</span><br><span class="red">情緒追蹤網站</span></h1>
+                        <div class="main_banner_introduction">
+                            每個月總有幾天心情不好，但不知道是什麼原因導致嗎?
                             Mooding 讓您輕鬆紀錄心情，並精準分析出您疑惑許久                        
-                            的情緒問題。</p>          
-                            <a href=""><button class="Mbtn">開始寫日記</button></a>
-                    </div>
-                </div>             
-                <div class="mb-pic">
-                    <div class="pic">
-                        <img src="images/mainPic.svg" alt="">
-                    </div>
-                </div>
-            </section>
-            <section class="content-pf"><!-------精選功能------->
-                <div class="txt">
-                    <h3>精選功能</h3>
-                    <p>Primary  function</p>
-                </div>
-                <div class="cardList">
-                    <div class="item">
-                        <div class="pic">
-                            <img src="images/diary.svg" alt="">
+                            的情緒問題。
                         </div>
-                        <p class="title">快速地創建記錄</p>
-                        <p>快速創建日誌記錄。用户無須敲字，即可紀錄您的日常生活。您也可添加相應的位置，筆記和想法。</p>
+                        <button class="btn_action">開始寫日記</button>
                     </div>
-                    <div class="item">
-                        <div class="pic">
-                            <img src="images/statistics.svg" alt="">
-                        </div>
-                        <p class="title">分析您的情緒</p>
-                        <p>Mooding的分析引擎幫您找出影響積極和消極情緒的習慣。</p>
-                    </div>
-                    <div class="item">
-                        <div class="pic">
-                            <img src="images/article.svg" alt="">
-                        </div>
-                        <p class="title">精選解壓文章</p>
-                        <p>Mooding整理出眾多情緒排解文章，供您免費閱讀。</p>
-                    </div>
-                    <div class="item">
-                        <div class="pic">
-                            <img src="images/consult.svg" alt="">
-                        </div>
-                        <p class="title">線上諮詢</p>
-                        <p>Mooding 線上諮詢讓您無需舟車勞頓，即可在安心的私人空間，進行諮商。</p>
-                    </div>
+                    <div class="main_banner_image"><img src="./images/mainPic.svg" alt=""></div>
                 </div>
-            </section>
-            <section class="content-rm"><!-------如何開始-------->
-                <div class="rm-txt">
-                    <h3>如何開始</h3>
-                    <p>Road map</p>
-                </div>
-                <div class="roadList">
+            </section><!------banner end------>
+            <section class="content_primaryFunction"><!-------精選功能------->
+                <div class="content_primaryFunction_inner">
                     <div class="txt">
-                        <p class="Phase">Phase 1</p>
-                        <p class="title"><span>每日心情紀錄</span></p>
-                        <p>每天輕鬆地紀錄您的日常生活，包括心情，飲食，活動等等.........。</p>
+                        <h2>精選功能</h2>
+                        <small>Primary function</small>
                     </div>
-                    <div class="pic">
-                        <img src="images/Mooding-calendar.svg" alt="">
+                    <div class="cardList">
+                        <div class="item">
+                            <div class="pic">
+                                <img src="images/diary.svg" alt="">
+                            </div>
+                            <p class="title">快速地創建記錄</p>
+                            <p>快速創建日誌記錄。用户無須敲字，即可紀錄您的日常生活。您也可添加相應的位置，筆記和想法。</p>
+                        </div>
+                        <div class="item">
+                            <div class="pic">
+                                <img src="images/statistics.svg" alt="">
+                            </div>
+                            <p class="title">分析您的情緒</p>
+                            <p>Mooding的分析引擎幫您找出影響積極和消極情緒的習慣。</p>
+                        </div>
+                        <div class="item">
+                            <div class="pic">
+                                <img src="images/article.svg" alt="">
+                            </div>
+                            <p class="title">精選測驗、文章</p>
+                            <p>Mooding整理出眾多心理量表及情緒排解文章，供您免費測驗閱讀。</p>
+                        </div>
+                        <div class="item">
+                            <div class="pic">
+                                <img src="images/consult.svg" alt="">
+                            </div>
+                            <p class="title">線上諮詢</p>
+                            <p>Mooding 線上諮詢讓您無需舟車勞頓，即可在安心的私人空間，進行諮商。</p>
+                        </div>
                     </div>
                 </div>
-                <div class="roadList">                   
-                    <div class="pic">
-                        <img src="images/Mooding-statistics.svg" alt="">
-                    </div>
+            </section><!-------精選功能 end------->
+            <section class="content_about"><!-------關於Mooding-------->
+                <div class="content_about_inner">
                     <div class="txt">
-                        <p class="Phase">Phase 2</p>
-                        <p class="title"><span>每月數據統計</span></p>
-                        <p>在月初時會統計出您上個月的情緒報表，讓您的情緒起伏一目瞭然。</p>
+                        <h2>關於Mooding</h2>
+                        <small>About us</small>
+                    </div>
+                    <div class="carousel_container"><!-------輪播圖-------->
+                        <div class="carousel">
+                            <div class="carousel_box">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="./images/carousel1X1000.svg">
+                                    <source media="(min-width: 320px) and (max-width: 767.98px)" srcset="images/carousel1X400.svg" />
+                                    <img src="images/carousel1X400.svg" alt="">
+                                </picture>
+                            </div>
+                            <div class="carousel_box">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="./images/carousel2X1000.svg">
+                                    <source media="(min-width: 320px) and (max-width: 767.98px)" srcset="images/carousel2X400.svg" />
+                                    <img src="images/carousel2X400.svg" alt="">
+                                </picture>
+                            </div>
+                            <div class="carousel_box">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="./images/carousel3X1000.svg">
+                                    <source media="(min-width: 320px) and (max-width: 767.98px)" srcset="images/carousel3X400.svg" />
+                                    <img src="images/carousel3X400.svg" alt="">
+                                </picture>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="roadList">
+            </section><!-------關於Mooding end-------->
+            <section class="content_test"><!------心理量表------>
+                <div class="content_test_inner">
                     <div class="txt">
-                        <p class="Phase">Phase 3</p>
-                        <p class="title"><span>情緒了解/理解</span></p>
-                        <p>如果您有心情排解問題，可以閱讀心情文章，或線上預約諮詢服務。</p>
+                        <h2>心理量表</h2>
+                        <small>快來測試自己的心理健康指數，是否在健康範圍內！ </small>
                     </div>
-                    <div class="pic">
-                        <img src="images/Mooding-consult.svg" alt="">
+                    <div class="testList">
+                        <a href="#">
+                            <div class="item">
+                                <div class="pic">
+                                    <img src="images/sad-girl-sits-on-the-floor.png" alt="">
+                                </div>
+                                <p class="title">憂鬱症自我檢測</p>
+                                <p>憂鬱症自我檢測，關心自己的心理健康!...美國知名心理治療專家....</p>
+                                <div class="item_bottom">
+                                    <span class="view">399人瀏覽</span>
+                                    <span class="arrow"></span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="item">
+                                <div class="pic">
+                                    <img src="images/mother-protects-her-child.png" alt="">
+                                </div>
+                                <p class="title">童年創傷經驗，對我們的影響有多大?</p>
+                                <p>童年不好的成長經歷，若未被....</p>
+                                <div class="item_bottom">
+                                    <span class="view">263人瀏覽</span>
+                                    <span class="arrow"></span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="item">
+                                <div class="pic">
+                                    <img src="images/older-man.png" alt="">
+                                </div>
+                                <p class="title">長者憂鬱量表(GDS-15)</p>
+                                <p>許多長者退休年齡將至，加上兒女長大離家，家庭的責任告一段....。</p>
+                                <div class="item_bottom">
+                                    <span class="view">452人瀏覽</span>
+                                    <span class="arrow"></span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="item">
+                                <div class="pic">
+                                    <img src="images/helps-a-sad-lonely-woman.png" alt="">
+                                </div>
+                                <p class="title">心量壓力檢測量表</p>
+                                <p>花點時間關心自己，來測試最近的壓力指數，是否在理想範圍內吧!</p>
+                                <div class="item_bottom">
+                                    <span class="view">866人瀏覽</span>
+                                    <span class="arrow"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="more">
+                        <a href="./test.html"><div class="moreBtn">更多測驗➝</div></a>
                     </div>
                 </div>
-            </section>
-            <section class="content-au"><!-------關於我們------->
-                <div class="au-txt">
-                    <h3>關於我們</h3>
-                    <p>About us</p>
+            </section><!------心理量表 end------>
+            <section class="content_article"><!------精選文章------>
+                <div class="content_article_inner">
+                    <div class="article_txt">
+                        <h2>精選文章</h2>
+                        <small>Articles</small>
+                    </div>
+                    <div class="article_list">
+                        <a href="#">
+                            <div class="item">
+                                <div class="pic">
+                                    <img src="images/stress.jpg" alt="">
+                                </div>
+                                <p class="date">June.30.2022</p>
+                                <p class="title">與壓力共舞</p>
+                                <div class="tags">
+                                    <ul>
+                                        <img src="./images/tags.svg" alt="">
+                                        <li><span>壓力</span></li>
+                                    </ul>
+                                </div>
+                                <p>面對壓力，學習良好的壓力管理能力似乎已成為現代生活中必要的課題。而好的壓力因應技巧千千百百種，但是真正...</p>
+                                <div class="item_bottom">
+                                    <span class="view">357人瀏覽</span>
+                                    <span class="arrow"></span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="item">
+                                <div class="pic">
+                                    <img src="images/break-up.jpg" alt="">
+                                </div>
+                                <p class="date">May.03.2022</p>
+                                <p class="title">談分手調適，分手後該怎麼辦?</p>
+                                <div class="tags">
+                                    <ul>
+                                        <img src="./images/tags.svg" alt="">
+                                        <li><span>感情</span></li>
+                                    </ul>
+                                </div>
+                                <p>時間常是療癒傷口的良藥，當自己面臨一段重要關係的結束，不管原先的關係...</p>
+                                <div class="item_bottom">
+                                    <span class="view">487人瀏覽</span>
+                                    <span class="arrow"></span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="item">
+                                <div class="pic">
+                                    <img src="images/specil.jpg" alt="">
+                                </div>
+                                <p class="date">June.17.2022</p>
+                                <p class="title">你的獨一無二，值得被真心對待</p>
+                                <div class="tags">
+                                    <ul>
+                                        <img src="./images/tags.svg" alt="">
+                                        <li><span>自信</span></li>
+                                    </ul>
+                                </div>
+                                <p>不帶條件地接納全部的自己，無論你覺得這有多糟、多自卑，都不要緊，它是...</p>
+                                <div class="item_bottom">
+                                    <span class="view">630人瀏覽</span>
+                                    <span class="arrow"></span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="item">
+                                <div class="pic">
+                                    <img src="images/family-fight.jpg" alt="">
+                                </div>
+                                <p class="date">April.25.2022</p>
+                                <p class="title">為什麼家人間彼此相愛卻又總是互相傷害？</p>
+                                <div class="tags">
+                                    <ul>
+                                        <img src="./images/tags.svg" alt="">
+                                        <li><span>家庭與婚姻</span></li>
+                                    </ul>
+                                </div>
+                                <p>家是人們的避風港，家人的支持與關懷是一個人向前邁進的動力，也是...</p>
+                                <div class="item_bottom">
+                                    <span class="view">704人瀏覽</span>
+                                    <span class="arrow"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="more">
+                        <a href="./Article.html"><div class="moreBtn">更多文章➝</div></a>
+                    </div>
                 </div>
-                <div class="content-au-base">
-                    <div class="BTN">
-                        <button class="au-btn L"><img src="images/btn-L.svg" alt=""></button>
-                    </div>
-                    
-                    <div class="au-pic">
-                        <img src="images/mission.svg" alt="">
-                    </div>
+            </section><!------精選文章 end------>
+            <section class="content_review"><!------聽聽他們說------>
+                <div class="content_review_inner">
                     <div class="txt">
-                        <p class="title">我們的使命</p>
-                        <p>Mooding 是一款情绪追蹤網站 ，旨在促進您的心理健康，收穫幸福康樂。</p>
+                        <h2>聽聽他們的心得</h2>
+                        <small>Reviews</small>
                     </div>
-                    <div class="BTN">
-                        <button class="au-btn R"><img src="images/btn-R.svg" alt=""></button>
-                    </div>
-                    <div class="au-dot"></div>
-                    <div class="au-dot"></div>
-                    <div class="au-dot"></div>
-                    <div class="au-dot"></div>                   
-                </div>
-            </section>
-            <section class="content-test"><!------心理量表------>
-                <div class="test-txt">
-                    <h3>心理量表</h3>
-                    <p>快來測試自己的心理健康指數，是否在健康範圍內！ </p>
-                </div>
-                <div class="testList">
-                    <a href="#">
-                        <div class="item">
-                            <div class="pic">
-                                <img src="images/sad-girl-sits-on-the-floor.png" alt="">
+                    <div class="carousel_container_second">
+                        <div class="carousel_second">
+                            <div class="carousel_box_second">
+                                <div class="pic"><img src="images/taylor swift.jpg" alt=""></div>
+                                <div class="name">Taylor Swift</div>
+                                <div class="score"><img src="images/score.svg" alt=""></div>
+                                <p class="txt">Mooding整理出眾多情緒排解文章，讓我簡單快速的排解情緒問題，對我來說很真的有幫助。</p>
                             </div>
-                            <p class="title">憂鬱症自我檢測</p>
-                            <p>452人瀏覽
-                                <span class="arrow"></span>
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="item">
-                            <div class="pic">
-                                <img src="images/mother-protects-her-child.png" alt="">
+                            <div class="carousel_box_second">
+                                <div class="pic"><img src="images/Ed Sheeran.jpg" alt=""></div>
+                                <div class="name">Ed Sheeran</div>
+                                <div class="score"><img src="images/score_full.svg" alt=""></div>
+                                <p class="txt">Mooding的諮商團隊幫助我走出多年的憂鬱陰霾，我每天會寫日記，且持續追蹤我的情緒變化。</p>
                             </div>
-                            <p class="title">童年創傷經驗，對我們的影響有多大?</p>
-                            <p class="view">263人瀏覽
-                                <span class="arrow"></span>
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="item">
-                            <div class="pic">
-                                <img src="images/older-man.png" alt="">
+                            <div class="carousel_box_second">
+                                <div class="pic"><img src="images/Billie Eilish.jpg" alt=""></div>
+                                <div class="name">Billie Eilish</div>
+                                <div class="score"><img src="images/score_full.svg" alt=""></div>
+                                <p class="txt">Mooding的日記系統介面真的很可愛且好上手，讓我可以有動力持續每天登入寫日記。</p>
                             </div>
-                            <p class="title">長者憂鬱量表(GDS-15)</p>
-                            <p>519人瀏覽
-                                <span class="arrow"></span>
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="item">
-                            <div class="pic">
-                                <img src="images/helps-a-sad-lonely-woman.png" alt="">
+                            <div class="carousel_box_second">
+                                <div class="pic"><img src="images/Anne-Marie.jpg" alt=""></div>
+                                <div class="name">Anne-Marie</div>
+                                <div class="score"><img src="images/score.svg" alt=""></div>
+                                <p class="txt">Mooding整理出眾多情緒排解文章，讓我簡單快速的排解情緒問題，對我來說很真的有幫助。</p>
                             </div>
-                            <p class="title">心量壓力檢測量表</p>
-                            <p>403人瀏覽
-                                <span class="arrow"></span>
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="more">
-                    <a href="./test.html"><div class="moreBtn">更多測驗➝</div></a>
-                </div>
-            </section>
-            <section class="content-article"><!------精選文章------>
-                <div class="article-txt">
-                    <h3>精選文章</h3>
-                    <p>Articles</p>
-                </div>
-                <div class="articleList">
-                    <a href="#">
-                        <div class="item">
-                            <div class="pic">
-                                <img src="images/stress.jpg" alt="">
+                            <div class="carousel_box_second">
+                                <div class="pic"><img src="images/Sam-Smith.jpg" alt=""></div>
+                                <div class="name">Sam Smith</div>
+                                <div class="score"><img src="images/score_full.svg" alt=""></div>
+                                <p class="txt">Mooding的日記系統介面真的很可愛且好上手，讓我可以有動力持續每天登入寫日記。</p>
                             </div>
-                            <p class="title">與壓力共舞</p>
-                            <p>357人瀏覽
-                                <span class="arrow"></span>
-                            </p>
                         </div>
-                    </a>
-                    <a href="#">
-                        <div class="item">
-                            <div class="pic">
-                                <img src="images/break-up.jpg" alt="">
-                            </div>
-                            <p class="title">談分手調適，分手後該怎麼辦?</p>
-                            <p class="view">962人瀏覽
-                                <span class="arrow"></span>
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="item">
-                            <div class="pic">
-                                <img src="images/specil.jpg" alt="">
-                            </div>
-                            <p class="title">你的獨一無二，值得被真心對待</p>
-                            <p class="view">874人瀏覽
-                                <span class="arrow"></span>
-                            </p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="item">
-                            <div class="pic">
-                                <img src="images/family-fight.jpg" alt="">
-                            </div>
-                            <p class="title">為什麼家人間彼此相愛卻又總是互相傷害？</p>
-                            <p class="view">703人瀏覽
-                                <span class="arrow"></span>
-                            </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="more">
-                    <a href="./Article.html"><div class="moreBtn">更多文章➝</div></a>
-                </div>
-            </section>
-            <section class="content-Review"><!------聽聽他們說------>
-                <div class="Review-txt">
-                    <h3>聽聽他們的心得</h3>
-                    <p>Reviews</p>
-                </div>
-                <div class="ReviewList">
-                    <div class="BTN">
-                        <button class="au-btn L"><img src="images/btn-L.svg" alt=""></button>
-                    </div>
-                    <div class="item around">
-                        <div class="pic"><img src="images/taylor swift.jpg" alt=""></div>
-                        <div class="name">Taylor Swift</div>
-                        <div class="score"><img src="images/score.svg" alt=""></div>
-                        <p class="txt">Mooding整理出眾多情緒排解文章，讓我簡單快速的排解情緒問題，對我來說很真的有幫助。</p>
-                    </div>
-                    <div class="item">
-                        <div class="pic"><img src="images/Ed Sheeran.jpg" alt=""></div>
-                        <div class="name">Ed Sheeran</div>
-                        <div class="score"><img src="images/score.svg" alt=""></div>
-                        <p class="txt">Mooding的諮商團隊幫助我走出多年的憂鬱陰霾，現在還是會每天寫日記，且持續追蹤我的情緒變化。</p>
-                    </div>
-                    <div class="item around">
-                        <div class="pic"><img src="images/Billie Eilish.jpg" alt=""></div>
-                        <div class="name">Billie Eilish</div>
-                        <div class="score"><img src="images/score.svg" alt=""></div>
-                        <p class="txt">Mooding的日記系統介面真的很可愛且好上手，讓我可以有動力持續每天登入寫日記。</p>
-                    </div>
-                    <div class="BTN">
-                        <button class="au-btn R"><img src="images/btn-R.svg" alt=""></button>
                     </div>
                 </div>            
-            </section>
-            <section class="content-AD"> <!-------準備開始寫日記------->
-                <div class="AD-txt">
-                    <h2>準備好開始了解您的情緒?</h2>
-                </div>
-                
-                    <button class="AD-btn">
-                        <a href="#"><div class="BTN">開始寫日記</div></a>
-                    </button>
-                <div class="AD-bgp"><img src="images/main2Pic.png" alt=""></div>
-            </section>
-        </main>
-        <footer><!----------footer----------->
-            <div class="footerBase">
-                <div class="iconItem">
-                    <a href="./Index.html"><div class="logoPic"><img src="images/whitelogo.svg" alt=""></div></a>
-                    <div class="socialPic">
-                        <a href=""><div class="pic"><img src="images/ig.svg" alt=""></div></a>
-                        <a href=""><div class="pic"><img src="images/twitter.svg" alt=""></div></a>
-                        <a href=""><div class="pic"><img src="images/FB.svg" alt=""></div></a>
+            </section><!------聽聽他們說 end------>
+            <section class="content_advertise"> <!-------準備開始寫日記------->
+                <div class="content_advertise_inner">
+                    <div class="txt">
+                        <p>準備好開始了解您的情緒?</p>
+                    </div>
+                        <button class="advertise_btn">開始寫日記</button>
+                    <div class="advertise_vector_pic">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="./images/main2PicX1000.svg">
+                            <source media="(min-width: 320px) and (max-width: 767.98px)" srcset="./images/main2PicX500.svg" />
+                            <img src="images/carousel2X400.svg" alt="">
+                        </picture>
                     </div>
                 </div>
-                <div class="MenuItem">
-                    <div class="menu title">服務</div>
-                    <div class="menu"><a href="./LiveDiary.html">線上日記</a></div>
-                    <div class="menu"><a href="./Consult.html">諮商服務</a></div>
-                    <div class="menu"><a href="./test.html">心情量表</a></div>
-                    <div class="menu"><a href="./Article.html">精選文章</a></div>
+            </section>
+            <img src="./images/top.png" id="go_top"><!------go top按鈕------>
+        </main><!------main中間大區塊 end------>
+        <footer><!----------footer----------->
+            <div class="footer">
+                <div class="footer_inner">
+                    <div class="iconItem">
+                        <a href="./Index.html"><div class="logoPic"><img src="images/whitelogo.svg" alt=""></div></a>
+                        <div class="socialPic">
+                            <a href=""><div class="pic"><img src="images/ig.svg" alt=""></div></a>
+                            <a href=""><div class="pic"><img src="images/twitter.svg" alt=""></div></a>
+                            <a href=""><div class="pic"><img src="images/FB.svg" alt=""></div></a>
+                        </div>
+                    </div>
+                    <div class="MenuItem">
+                        <div class="menu title">服務</div>
+                        <div class="menu"><a href="./LiveDiary.html">線上日記</a></div>
+                        <div class="menu"><a href="./Consult.html">諮商服務</a></div>
+                        <div class="menu"><a href="./test.html">心情量表</a></div>
+                        <div class="menu"><a href="./Article.html">精選文章</a></div>
+                    </div>
+                    <div class="contactItem">
+                        <div class="item title">幫助</div>
+                        <div class="item"><a href="">使用幫助</a></div>
+                        <div class="item"><a href="">聯絡我們</a></div>
+                        <div class="item"><a href="">心理師申請駐站</a></div>
+                    </div>
+                    <div class="footer-space"></div>
+                    <div class="LogItem">
+                        <div class="log"><a href="#">登入</a></div>
+                        <div class="log"><a href="#">註冊</a></div>
+                    </div>
                 </div>
-                <div class="contactItem">
-                    <div class="item title">幫助</div>
-                    <div class="item"><a href="">使用幫助</a></div>
-                    <div class="item"><a href="">聯絡我們</a></div>
-                    <div class="item"><a href="">心理師申請駐站</a></div>
-                </div>
-                <div class="LogItem">
-                    <div class="log"><a href="#">登入</a></div>
-                    <div class="log"><a href="#">註冊</a></div>
-                </div>
-            </div>
-            <div class="
-            statement">本網站為緯育TibaMe前端工程師第77期學員專題作品，僅供學習、展示之用。
-                若有侵權疑慮，請私訊 <a href="https://www.tibame.com/">[TibaMe-前端設計工程師養成班]</a>，後續由專人協助處理。</div>
-            <div class="copyRight">2022 © All rights reserved</div>            
-        </footer>
+                <div class="
+                statement">本網站為緯育TibaMe前端工程師第77期學員專題作品，僅供學習、展示之用。
+                    若有侵權疑慮，請私訊 <a href="https://www.tibame.com/">[TibaMe-前端設計工程師養成班]</a>，後續由專人協助處理。</div>
+                <div class="copyRight">2022 © All rights reserved</div> 
+            </div>           
+        </footer><!----------footer end----------->
     </div><!----背景圖----->
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/modal_toggle.js"></script>
+    <script src="./js/slick.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                infinite: true,
+                arrows: true,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2500,
+                respondTo: "slider",
+                swipeToSlide: true,
+            });
+
+            $('.carousel_second').slick({
+            infinite: true,
+            centerMode: true,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 2500,
+            respondTo: "slider",
+            swipeToSlide: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+                }
+            ]
+            });
+        });
+    </script>
 </body>
 </html>
