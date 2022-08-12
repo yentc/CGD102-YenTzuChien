@@ -8,35 +8,56 @@
     <title>Mooding-情緒追蹤網站</title>
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/consultStyle.css">
+    <link rel="stylesheet" href="./CSS/gobal.css">
+    <link rel="stylesheet" href="./CSS/hamburgers.css">
+    <link rel="stylesheet" href="./CSS/slick.css">
+    <link rel="stylesheet" href="./CSS/slick-theme.css">
+    <link rel="stylesheet" href="./CSS/aos.css">
 </head>
 <body>
     <div class="backgroundPic"><!-------背景圖-------->
-        <header class="page-header"> <!-------導覽列-------->
-            <div class="page-header-base">
-                <h1><a href="./Index.html"><img class="logo" src="./images/LOGO.svg" alt="Mooding-情緒追蹤網站"></a></h1>
-            <nav>
-                <ul class="main-ul">
-                    <li><a href="./LiveDiary.html">線上日記</a></li>
-                    <li><a href="./Consult.html">諮商服務</a></li>
-                    <li><a href="./test.html">心理量表</a></li>
-                    <li><a href="./Article.html">精選文章</a></li>
-                    <li class="li-space"></li>
-                    <li class="log-in"><a href="">登入</a></li>
-                    <li class="sign-up"><a href="">註冊</a></li>
-                </ul>
-            </nav>
+        <header class="page_header dropdowns"><!-------導覽列-------->
+            <div class="header_inner">
+                <a href="./index.html" class="header_logo">
+                    <img src="./images/LOGO.svg" alt="">
+                </a>
+                <div class="header_navigation" id="nav">
+                    <nav class="header_navigation_nav">
+                        <ul class="header_navigation_list"><!-------選單li區-------->
+                            <li class="header_navigation_item">
+                                <a href="./LiveDiary.html">如何開始</a></li>
+                            <li class="header_navigation_item">
+                                <a href="./Consult.html">諮商服務</a></li>
+                            <li class="header_navigation_item">
+                                <a href="./test.html">心理量表</a></li>
+                            <li class="header_navigation_item">
+                                <a href="./Article.html">精選文章</a></li>
+                        </ul>
+                        <div class="header_navigation_btnArea"><!-------登入註冊區-------->
+                            <button class="header_navigation_log-in">登入</button>
+                            <button class="header_navigation_sign-up">註冊</button>
+                        </div>
+                    </nav>
+                </div>
+                <button class="hamburger hamburger--collapse" type="button"><!-------漢堡按鈕-------->
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
             </div>
-        </header>
-        <main>
-            <section class="main-banner"><!-------banner------->
-                <h2>Mooding線上諮商團隊</h2>
-                <p>Mooding 以最安全隱私的方式，不限距離，不限時間，不限國界，讓您釋放心中的沉痛與煩亂。</p>
-                <a href="#"><button class="btn">預約線上諮商</button></a>
-                <picture><img src="images/consultBanner.svg" alt=""></picture>
+        </header><!-------導覽列end-------->
+        <main><!------main中間大區塊------>
+            <section class="main_banner"><!-------banner------->
+                <div class="main_banner_inner">
+                    <h1>Mooding專業線上諮詢服務</h1>
+                    <p>Mooding 以最安全隱私的方式，不限距離，不限時間，不限國界，讓您釋放心中的沉痛與煩亂。</p>
+                    <button class="btn">預約線上諮商</button>
+                    <picture><img src="images/consultBannerX1000.svg" alt=""></picture>
+                </div>
             </section>
-            <section class="content-adv"><!-------三大優勢------->
+            <section class="content_adv"><!-------三大優勢------->
                 <div class="txt">
-                    <h3>三大優勢</h3>
+                    <h2>三大優勢</h2>
                     <p>Advantage</p>
                 </div>
                 <div class="cardList">
@@ -63,9 +84,9 @@
                     </div>
                 </div>
             </section>
-            <section class="content-team"><!-------專業團隊------->
+            <section class="content_team"><!-------專業團隊------->
                 <div class="txt">
-                    <h3>專業團隊</h3>
+                    <h2>專業團隊</h2>
                     <p>Our Team</p>
                 </div>
                 <div class="cardList">
@@ -108,12 +129,12 @@
                 </div>
                 <a href="#"><button class="btn">更多心理師</button></a>
             </section>
-            <section class="content-Arr"><!-------諮商安排------->
+            <section class="content_arrange"><!-------諮商安排------->
                 <div class="txt">
-                    <h3>諮商安排</h3>
+                    <h2>諮商安排</h2>
                     <p>Arrange</p>
                 </div>
-                <div class="team-base">
+                <div class="team_base">
                     <ul>
                         <li>1. 您若有指定的心理師，本所將進行安排。若您無指定的心理師，本所會將遴選適當的心理師為您提供服務。</li>
 
@@ -131,22 +152,22 @@
                     </ul>
                 </div>
             </section>
-            <section class="content-Process"><!-------預約流程------->
+            <section class="content_Process"><!-------預約流程------->
                 <div class="txt">
-                    <h3>預約流程</h3>
+                    <h2>預約流程</h2>
                     <p>Appointment Process</p>
                 </div>
-                <div class="Process-base">
+                <div class="Process_base">
                     <img src="images/Appointment Process.svg" alt="">
                 </div>
             </section>
-            <section class="content-Notice"><!-------注意事項------->
+            <section class="content_Notice"><!-------注意事項------->
                 <div class="txt">
-                    <h3>注意事項</h3>
+                    <h2>注意事項</h2>
                     <p>Precautions</p>
                 </div>
-                <div class="Notice-base">
-                    <div class="Notice-base-top">
+                <div class="Notice_base">
+                    <div class="Notice_base_top">
                         <div class="title"><p>諮商中請假事宜</p></div>
                         <div class="word">
                             <p>1.若您需要取消預約的心理諮商，請於該次心理諮商原訂時間<span>前 24 小時</span>透過線上留言、或寄信至本站專用信(Mooding@gmail.com) 通知您的情況。</p>
@@ -154,7 +175,7 @@
                             <p>3.諮商過程中若經常發生遲到、請假情況，建議您與諮商師做進一步深入探討及處理。</p>
                         </div>
                     </div>
-                    <div class="Notice-base-bottom">
+                    <div class="Notice_base_bottom">
                         <div class="title"><p>諮商保密與保密例外</p></div>
                         <div class="word">
                             <p>本站心理師本著專業倫理的規定，沒有經過您的同意不得將談話內容告知他人，但下列特殊情形將屬保密例外：</p>
@@ -166,38 +187,50 @@
             </section>
         </main>
         <footer><!----------footer----------->
-            <div class="footerBase">
-                <div class="iconItem">
-                    <a href="./Index.html"><div class="logoPic"><img src="images/whitelogo.svg" alt=""></div></a>
-                    <div class="socialPic">
-                        <a href=""><div class="pic"><img src="images/ig.svg" alt=""></div></a>
-                        <a href=""><div class="pic"><img src="images/twitter.svg" alt=""></div></a>
-                        <a href=""><div class="pic"><img src="images/FB.svg" alt=""></div></a>
+            <div class="footer">
+                <div class="footer_inner"><!--inner-->
+                    <div class="iconItem">
+                        <a href="./Index.html"><div class="logoPic"><img src="images/whitelogo.svg" alt=""></div></a>
+                        <div class="socialPic">
+                            <a href=""><div class="pic"><img src="images/ig.svg" alt=""></div></a>
+                            <a href=""><div class="pic"><img src="images/twitter.svg" alt=""></div></a>
+                            <a href=""><div class="pic"><img src="images/FB.svg" alt=""></div></a>
+                        </div>
+                    </div>
+                    <div class="MenuItem">
+                        <div class="menu title">服務</div>
+                        <div class="menu"><a href="./LiveDiary.html">如何開始</a></div>
+                        <div class="menu"><a href="./Consult.html">諮商服務</a></div>
+                        <div class="menu"><a href="./test.html">心情量表</a></div>
+                        <div class="menu"><a href="./Article.html">精選文章</a></div>
+                    </div>
+                    <div class="contactItem">
+                        <div class="item title">幫助</div>
+                        <div class="item"><a href="">使用幫助</a></div>
+                        <div class="item"><a href="">聯絡我們</a></div>
+                        <div class="item"><a href="">心理師申請駐站</a></div>
+                        <div class="item null"><a href="">我是空的</a></div>
+                    </div>
+                    <div class="footer-space"></div>
+                    <div class="LogItem">
+                        <div class="log in"><a href="#">登入</a></div>
+                        <div class="log"><a href="#">註冊</a></div>
                     </div>
                 </div>
-                <div class="MenuItem">
-                    <div class="menu title">服務</div>
-                    <div class="menu"><a href="./LiveDiary.html">線上日記</a></div>
-                    <div class="menu"><a href="./Consult.html">諮商服務</a></div>
-                    <div class="menu"><a href="./test.html">心情量表</a></div>
-                    <div class="menu"><a href="./Article.html">精選文章</a></div>
+                <div class="footer_bottom">
+                    <div class="statement">本網站為緯育TibaMe前端工程師第77期學員專題作品，僅供學習、展示之用。
+                        若有侵權疑慮，請私訊 <a href="https://www.tibame.com/">[TibaMe-前端設計工程師養成班]</a>，後續由專人協助處理。</div>
+                    <div class="copyRight">2022 © All rights reserved</div> 
                 </div>
-                <div class="contactItem">
-                    <div class="item title">幫助</div>
-                    <div class="item"><a href="">使用幫助</a></div>
-                    <div class="item"><a href="">聯絡我們</a></div>
-                    <div class="item"><a href="">心理師申請駐站</a></div>
-                </div>
-                <div class="LogItem">
-                    <div class="log"><a href="#">登入</a></div>
-                    <div class="log"><a href="#">註冊</a></div>
-                </div>
-            </div>
-            <div class="
-            statement">本網站為緯育TibaMe前端工程師第77期學員專題作品，僅供學習、展示之用。
-                若有侵權疑慮，請私訊 <a href="https://www.tibame.com/">[TibaMe-前端設計工程師養成班]</a>，後續由專人協助處理。</div>
-            <div class="copyRight">2022 © All rights reserved</div>            
-        </footer>
+            </div><!--inner end-->           
+        </footer><!----------footer end----------->
     </div><!----背景圖----->
+    <script src="./js/jquery-3.6.0.js"></script>
+        <script src="./js/modal_toggle.js"></script>
+        <script src="./js/slick.js"></script>
+        <script src="./js/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 </html>
