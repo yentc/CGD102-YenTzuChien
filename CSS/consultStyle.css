@@ -62,50 +62,87 @@ main{
     transform: scale(1.03);
     box-shadow: var(--blue-color) 0px 3px 0px;
 }
+/*====== 行動版 RWD | 320px ~ 768px ======*/
+@media screen and (min-width: 320px) and (max-width: 767.98px){
+.main_banner{
+    min-width: 100%;
+    flex-direction: column;
+    height: 100%;
+}
+.main_banner_inner{
+    width: 100%;
+    text-align: center;
+}
+
+.main_banner_inner h1{
+    width: 100%;
+    font-size: 36px;
+    padding: 0px 50px 0px 50px;
+    line-height: 55px;
+
+}
+.main_banner p{
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 50px 30px 50px;
+    color: var(--gray-color);
+    line-height: 30px;
+    font-weight: 600;
+}
+.main_banner_image{
+    display: block;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+.main_banner_image img{
+    padding: 8px;
+    display: block;
+}
+}
+/*====== 行動版 RWD | 768px ~ 1200px ======*/
+@media screen and (min-width: 768px) and (max-width: 1199.98px){
+    .main_banner{
+        height: 50vh;
+    }
+    }
 /* ----------------------------三大優勢------------------------------ */
 .content_adv{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; 
+}
+.content_adv_inner{
+    width: 1000px;
+    padding: 100px 0px 50px 0px;
+
 }
 .content_adv .txt{
-    width: 1000px;
     text-align: center;
 }
 .content_adv h2{
     display: block;
-    padding: 130px 0px 10px 0px;
     font-size: 28px;
     color: var(--blue-color);
     font-weight: 600;
 }
 .content_adv .txt p{
     display: block;
-    padding: 0px 0px 40px 0px;
+    padding: 6px 0px 40px 0px;
     color: var(--blue-color);
 }
 .content_adv .cardList{
-    max-width: 1200px;
+    width: 100%;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .content_adv .cardList .item{
     max-width: 220px;
     padding: 15px;
     margin: 15px;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0px 0px 5px rgb(150, 150, 150);
-}
-.content_adv .cardList .item:hover{
-    box-shadow: 0px 2px 10px rgb(150, 150, 150);
-}
-.content_adv .cardList .item:hover img{
-    transform: scale(1.1);
-    transition: .5s;
 }
 .content_adv .cardList .pic{
     width: 100%;
@@ -122,7 +159,7 @@ main{
     object-fit: contain;
 }
 .content_adv .cardList .title{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     color:var(--blue-color);
     text-align: center;
@@ -131,44 +168,47 @@ main{
 .content_adv .cardList p{
     padding: 0px 0px 30px 0px;
     line-height: 30px;
+    font-weight: 600;
     color: var(--gray-color);
 }
-.content_adv .cardList .item:hover .title{
-    color: var(--red-color);
-}
 /* ----------------------------專業團隊------------------------------ */
-.content-team{
-    max-width: 1200px;
+.content_team{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.content-team .txt{
-    width: 1200px;
+.content_team_inner{
+    width: 1000px;
+    padding: 80px 0px 80px 0px;
+    text-align: center;
+    
+}
+.content_team .txt{
+    width: 100%;
     text-align: center;
 }
-.content-team h3{
+.content_team h2{
     display: block;
-    padding: 130px 0px 10px 0px;
     font-size: 28px;
     color: var(--blue-color);
     font-weight: 600;
 }
-.content-team .txt p{
+.content_team .txt p{
     display: block;
-    padding: 0px 0px 40px 0px;
+    padding: 6px 0px 40px 0px;
     color: var(--blue-color);
 
 }
-.content-team  .cardList{
-    max-width: 1200px;
+.content_team  .cardList{
+    width: 100%;
     padding: 0px 0px 20px 0px;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.content-team .cardList .item{
+.content_team .cardList .item{
     max-width: 220px;
     margin: 10px;
     padding: 15px;
@@ -177,12 +217,12 @@ main{
     border-radius: 15px;
     text-align: center;
 }
-.cardList .item:hover img{
+.content_team .cardList .item:hover img{
     transform: scale(1.05);
     transition: .5s;
     
 }
-/* .content-team .cardList .pic{
+/* .content_team .cardList .pic{
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -190,27 +230,28 @@ main{
     justify-content: center;
     align-items: center;    
 } */
-.content-team .cardList .pic img{
+.content_team .cardList .pic img{
     width: 90%;
     height: 90%;
     border-radius: 50%;
 }
-.content-team .cardList .title{
+.content_team .cardList .title{
     font-size: 22px;
     font-weight: 600;
     color:var(--blue-color);
     text-align: center;
     padding: 10px 0px 10px 0px;
 }
-.content-team .cardList p{
+.content_team .cardList p{
     padding: 0px 0px 10px 0px;
     line-height: 30px;
+    font-weight: 600;
     color: var(--gray-color);
 }
-.content-team .cardList .item:hover .title{
+.content_team .cardList .item:hover .title{
     color: var(--red-color);
 }
-.content-team button{
+.content_team button{
     padding: 10px 25px 10px 25px;
     background-color: var(--skyBlue-color);
     box-shadow: var(--blue-color) 0px 2px 0px;
@@ -221,137 +262,281 @@ main{
     color: white;
     cursor: pointer;
 }
-.content-team .btn:hover{
+.content_team .btn:hover{
     transform: scale(1.03);
     box-shadow: var(--blue-color) 0px 3px 0px;
 }
-/* ----------------------------諮商安排------------------------------ */
-.content-Arr{
-    max-width: 1200px;
+/*====== 行動版 RWD | 320px ~ 768px ======*/
+@media screen and (min-width: 320px) and (max-width: 767.98px){
+.content_team_inner{
+    width: 100%;
+    padding: 80px 0px 80px 0px;
+    
+}
+.content_team  .cardList{
+    width: 100%;
+    padding: 0px 0px 20px 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.content-Arr .txt{
-    width: 1200px;
+}
+/*====== 行動版 RWD | 768px ~ 1200px ======*/
+@media screen and (min-width: 768px) and (max-width: 1199.98px){
+.content_team_inner{
+    width: 100%;
+    padding: 80px 0px 80px 0px;
+    
+}
+.content_team  .cardList{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content_team .cardList .item{
+    max-width: 200px;
+    margin: 0px;
+    padding: 15px;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 15px;
     text-align: center;
 }
-.content-Arr h3{
+}
+/* ----------------------------諮商安排------------------------------ */
+.content_arrange{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content_arrange_inner{
+    width: 1000px;
+    padding: 100px 0px 80px 0px;
+}
+.content_arrange .txt{
+    width: 100%;
+    text-align: center;
+}
+.content_arrange h2{
     display: block;
-    padding: 130px 0px 10px 0px;
     font-size: 28px;
     color: var(--blue-color);
     font-weight: 600;
 }
-.content-Arr .txt p{
+.content_arrange .txt p{
     display: block;
-    padding: 0px 0px 40px 0px;
+    padding: 6px 0px 40px 0px;
     color: var(--blue-color);
 }
-.content-Arr ul{
-    max-width: 900px;
-    padding: 0px 0px 0px 40px;
+.content_arrange ol{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0px 0px 0px 50px;
 }
-.content-Arr li{
+.content_arrange li{
     color: var(--blue-color);
     font-size: 16px;
     line-height: 40px;
+    list-style: decimal;
 }
-.content-Arr span{
+.content_arrange span{
     font-weight: 600;
     border-bottom: var(--red-color) 1.8px solid;
 }
-/* ----------------------------諮商安排------------------------------ */
-.content-Process{
-    max-width: 1200px;
+/*====== 行動版 RWD | 320px ~ 768px ======*/
+@media screen and (min-width: 320px) and (max-width: 767.98px){
+.content_arrange_inner{
+    width: 100%;
+}
+.content_arrange ol{
+    padding: 0px 30px 0px 40px;
+}
+.content_arrange li{
+    padding-bottom: 35px;
+    line-height: 30px;
+    list-style: decimal;
+}
+}
+/*====== 行動版 RWD | 768px ~ 1200px ======*/
+@media screen and (min-width: 768px) and (max-width: 1199.98px){
+.content_arrange_inner{
+    width: 100%;
+}
+.content_arrange ol{
+    padding: 0px 30px 0px 40px;
+}
+.content_arrange li{
+    padding-bottom: 35px;
+    line-height: 30px;
+    list-style: decimal;
+}
+}
+/* ----------------------------預約流程------------------------------ */
+.content_Process{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.content-Process .txt{
-    width: 1200px;
+.content_Process_inner{
+    width: 1000px;
+    padding: 100px 0px 80px 0px;
+    overflow: hidden;
+}
+.content_Process .txt{
+    width: 100%;
     text-align: center;
 }
-.content-Process h3{
+.content_Process h2{
     display: block;
-    padding: 130px 0px 10px 0px;
     font-size: 28px;
     color: var(--blue-color);
     font-weight: 600;
 }
-.content-Process .txt p{
+.content_Process .txt p{
     display: block;
-    padding: 0px 0px 50px 0px;
+    padding: 6px 0px 50px 0px;
     color: var(--blue-color);
 }
-.content-Process .Process-base{
-    display: flex;
-    justify-content: center;
+/*====== 行動版 RWD | 320px ~ 768px ======*/
+@media screen and (min-width: 320px) and (max-width: 767.98px){
+.content_Process_inner{
+    width: 100%;
 }
-.content-Process .Process-base img{
-    width: 90%;
 }
+/*====== 行動版 RWD | 768px ~ 1200px ======*/
+@media screen and (min-width: 768px) and (max-width: 1199.98px){
+.content_Process_inner{
+    width: 100%;
+}
+}
+
 /* ----------------------------注意事項------------------------------ */
-.content-Notice{
-    max-width: 1200px;
+.content_Notice{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.content-Notice .txt{
-    width: 1200px;
+.content_Notice_inner{
+    width: 1000px;
+    padding: 100px 0px 80px 0px;
+}
+.content_Notice .txt{
+    width: 100%;
     text-align: center;
 }
-.content-Notice h3{
+.content_Notice h2{
     display: block;
-    padding: 130px 0px 10px 0px;
     font-size: 28px;
     color: var(--blue-color);
     font-weight: 600;
 }
-.content-Notice .txt p{
+.content_Notice .txt p{
     display: block;
-    padding: 0px 0px 50px 0px;
+    padding: 6px 0px 50px 0px;
     color: var(--blue-color);
 }
-.content-Notice .Notice-base{
-    max-width: 1000px;
+.content_Notice .Notice_base{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.Notice-base .Notice-base-top{
+.Notice_base .Notice_base_top{
     border-top: rgb(196, 196, 196) 2px solid;
     display: flex;
     flex-wrap: wrap;
 }
-.Notice-base .Notice-base-bottom{
-    padding-bottom: 60px;
+.Notice_base .Notice_base_top .word{
+    padding-left: 20px;
+    list-style: decimal;
+}
+.Notice_base .Notice_base_bottom{
     border-top: rgb(196, 196, 196) 2px solid;
     display: flex;
     flex-wrap: wrap;
 }
-.Notice-base .title{
-    width: 300px;
+.Notice_base .Notice_base_bottom .word ol{
+    padding-left: 20px;
+    list-style: decimal;  
+}
+
+.Notice_base .title{
+    width: 35%;
     padding: 30px 0px 80px 0px;
     font-size: 22px;
     color: var(--red-color);
     font-weight: 600;
 }
-.Notice-base .word{
-    width: 600px;
+.Notice_base .word{
+    width: 65%;
     font-size: 16px;
     line-height: 30px;
     padding: 30px 0px 30px 0px;
     color: var(--blue-color);
 }
-.Notice-base .word p{
+.Notice_base .word p{
     padding: 0px 0px 15px 0px;
 }
-.Notice-base span{
+.Notice_base span{
     font-weight: 600;
     border-bottom: var(--red-color) 1.8px solid;
 }
+/*====== 行動版 RWD | 320px ~ 768px ======*/
+@media screen and (min-width: 320px) and (max-width: 767.98px){
+.content_Notice_inner{
+    width: 100%;
+}
+.Notice_base .Notice_base_top{
+    width: 100%;
+    display: flex;
+}
+.Notice_base .Notice_base_top .title{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+}
+.Notice_base .Notice_base_top .word{
+    width: 100%;
+    padding: 0px 50px 0px 60px ;
+    list-style: decimal;
+}
+.Notice_base .Notice_base_top .word li{
+    padding: 0px 0px 35px 0px ;
+    line-height: 30px;
+}
+.Notice_base .Notice_base_bottom{
+    width: 100%;
+    display: flex;
+}
+.Notice_base .Notice_base_bottom .title{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+}
+.Notice_base .Notice_base_bottom .word{
+    width: 100%;
+    padding: 0px 50px 0px 60px ;
+    list-style: decimal;
+}
+.Notice_base .Notice_base_bottom .word p{
+    padding: 0px 0px 20px 0px ;
+}
+.Notice_base .Notice_base_bottom .word li{
+    padding: 0px 0px 15px 0px ;
+    line-height: 30px;
+}
+}
+/*====== 行動版 RWD | 768px ~ 1200px ======*/
+@media screen and (min-width: 768px) and (max-width: 1199.98px){
+.content_Notice_inner{
+    width: 90%;
+}
+}
+
 /* -----------------------------footer------------------------------ */
 footer{
     width: 100%;
