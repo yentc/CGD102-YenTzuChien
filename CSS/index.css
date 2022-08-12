@@ -492,7 +492,7 @@ button.slick-next.slick-arrow{
     width: 20px;
     height: 15px;
     justify-content: center;
-    background-image: url('https://img.onl/pGCyBH');
+    background-image: url('../images/arrow_gray.svg');
     background-repeat:no-repeat;
     background-size: 80%;
     align-self: flex-end;
@@ -500,7 +500,7 @@ button.slick-next.slick-arrow{
 }
 .testList .item:hover .arrow{
     transform: none; 
-    background-image: url('https://img.onl/XZOXlN');
+    background-image: url('../images/arrow-red.svg');
 }
 .content_test .more{
     width: 100%;
@@ -678,14 +678,14 @@ button.slick-next.slick-arrow{
     width: 20px;
     height: 15px;
     justify-content: center;
-    background-image: url('https://img.onl/pGCyBH');
+    background-image: url('../images/arrow_gray.svg');
     background-repeat:no-repeat;
     background-size: 80%;
 
 }
 .article_list .item:hover .arrow{
     transform: none; 
-    background-image: url('https://img.onl/XZOXlN');
+    background-image: url('../images/arrow-red.svg');
 }
 .content_article .more{
     width: 100%;
@@ -852,281 +852,5 @@ button.slick-next.slick-arrow{
 .carousel_box_second .txt{
     font-size: 14px;
     line-height: 24px;
-}
-}
-/* -----------------------------準備開始寫日記------------------------------ */
-.content_advertise{
-    min-width: 100%;
-    padding-top: 100px;
-    padding-bottom: 80px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background: linear-gradient( #ffffff2b , #d2e9fc) ; */
-}
-.content_advertise_inner{
-    width: 1000px;
-}
-.content_advertise_inner .txt{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.content_advertise_inner .txt p{
-    font-size: 40px;
-    font-weight: 600;
-    color: var(--blue-color);
-}
-.advertise_btn{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 42px;
-    border: 0px;
-    padding: 12px 30px 12px 30px;
-    border-radius: 10px;
-    background-color: var(--BTN-color);
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
-    box-shadow: 0px 5px 0px var(--blue-color);
-    cursor: pointer;
-}
-.advertise_btn:hover{
-    transform: scale(1.03);
-    box-shadow: 0px 6px 0px var(--blue-color);
-}
-.advertise_btn:active{
-    transform: scale(1);
-}
-.advertise_vector_pic{
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.advertise_vector_pic img{
-    max-width: 100%;
-    display: block;
-}
-/*====== 行動版 RWD | 320px ~ 768px ======*/
-@media screen and (min-width: 320px) and (max-width: 767.98px){
-.content_advertise{
-    padding-top: 10px;
-    width: 100%;
-}
-.content_advertise_inner{
-    width: 100%;
-}
-.content_advertise_inner .txt p{
-    font-size: 38px;
-    text-align: center;
-    line-height: 45px;
-    padding: 0px 50px 0px 50px ;
-}
-.advertise_btn{
-    margin-bottom: 35px;
-}
-}
-/* -----------------------------footer------------------------------ */
-.footer{
-    min-width: 100%;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: var(--blue-color);
-}
-.footer_inner{
-    width: 1000px;
-    display: flex;
-}
-.iconItem{
-    box-sizing: border-box;
-    padding: 30px 150px 30px 50px;
-}
-.iconItem .logoPic{
-    width: 150px;
-    margin-bottom: 30px;
-}
-.iconItem .logoPic img{
-    display: block;
-}
-.socialPic{
-    display: flex;
-    justify-content: space-between;
-}
-.socialPic .pic{
-    width: 40px;
-    display: flex;
-    justify-content: center;
-}
-.MenuItem{
-    width: 20%;
-    display: flex;
-    flex-wrap: wrap;
-    /* padding: 30px; */
-}
-.MenuItem .menu{
-    width: 100%;
-    font-size: 16px;
-    padding: 0px 0px 25px 0px;
-    color: white;
-}
-.MenuItem .menu.title{
-    width: 100%;
-    font-size: 18px;
-    font-weight: 600;
-    color: white;
-}
-.MenuItem .menu a{
-    color: white;
-    padding-bottom: 5px;
-}
-.MenuItem .menu a:hover{
-    border-bottom: var(--red-color) 2px solid;
-}
-.contactItem{
-    display: flex;
-    flex-wrap: wrap;
-}
-.contactItem .item{
-    width: 100%;
-    font-size: 16px;
-    padding: 0px 0px 25px 0px;
-    color: white;
-}
-.contactItem .null{
-    visibility:hidden;
-}
-.contactItem .item.title{
-    width: 100%;
-    font-size: 18px;
-    font-weight: 600;
-    color: white;
-}
-.contactItem .item a{
-    color: white;
-    padding-bottom: 5px;
-    font-size:16px;
-}
-.contactItem .item a:hover{
-    border-bottom: var(--red-color) 2px solid;
-}
-.LogItem{
-    display: flex;
-    height: 80%;
-    flex-wrap: wrap;
-    padding: 20px 0px 0px 0px;
-}
-.LogItem .log{
-    width: 100%;
-    font-size: 16px;
-    font-weight: 600;
-    /* margin-bottom: 50px; */
-}
-.LogItem .log a{
-    color: white;
-    padding: 10px 20px 10px 20px;
-    border-radius: 10px;
-    background-color: var(--BTN-color);
-}
-.LogItem .log a:hover{
-    border-bottom: var(--yellow-color) 3px solid;
-}
-.footer_bottom{
-    width: 100%;
-}
-.statement{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    color: rgb(154, 154, 154);
-    border-top: rgb(154, 154, 154) 1px solid;
-    padding: 15px 0px 10px 0px;
-    font-size: 14px;
-}
-.statement a{
-    color: rgb(154, 154, 154);
-    font-size: 14px;
-}
-.statement a:hover{
-    color: var(--yellow-color);
-}
-.copyRight{
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    color: rgb(154, 154, 154);
-    font-size: 14px;
-    padding: 5px 0px 0px 0px;
-}
-.footer-space{
-    flex-grow: 1;
-}
-.footer_bottom{
-    margin-top: 30px;
-}
-/*====== 行動版 RWD | 320px ~ 768px ======*/
-@media screen and (min-width: 320px) and (max-width: 767.98px){
-.footer_inner{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-.MenuItem{
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 30px 0px 30px 50px ;
-}
-.contactItem{
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 30px 0px 30px 50px ;
-}
-.LogItem{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px 0px 0px 0px;
-}
-.LogItem .log{
-    width: 50%;
-    margin: 0px 0px 20px 50px ;
-}
-.LogItem .log.in{
-    margin: 0px 0px 50px 50px ;
-}
-.statement{
-    padding: 30px 30px 10px 30px;
-    line-height: 24px;
-
-}
-}
-/*====== 行動版 RWD | 768px ~ 1200px ======*/
-@media screen and (min-width: 768px) and (max-width: 1199.98px){
-.iconItem{
-    padding: 30px 100px 30px 50px;
-}
-.MenuItem{
-    width: 30%;
-}
-.LogItem{
-    padding: 20px 15px 0px 0px;
-}
-.statement{
-    padding: 20px 30px 10px 30px;
-    line-height: 24px;
-
 }
 }
