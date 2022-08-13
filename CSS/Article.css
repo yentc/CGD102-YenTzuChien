@@ -427,10 +427,18 @@ input:checked + li > label > span{
 .card_list{
     justify-content: center;
 }
+}
 /*====== 行動版 RWD | 768px ~ 1200px ======*/
 @media screen and (min-width: 768px) and (max-width: 1199.98px){
-.content_Process_inner{
-    width: 100%;
+.content_articles_inner{
+    width: 90%;
+    padding: 70px 0px 80px 0px;
 }
+.card_list{
+    width: 100%;
+    justify-content: space-evenly;
+}
+.card_list .item{
+    margin: 15px 15px 15px 15px;
 }
 }
