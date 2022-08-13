@@ -8,230 +8,323 @@
     <title>Mooding-情緒追蹤網站</title>
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/Article.css">
+    <link rel="stylesheet" href="./CSS/gobal.css">
+    <link rel="stylesheet" href="./CSS/hamburgers.css">
+    <link rel="stylesheet" href="./CSS/slick.css">
+    <link rel="stylesheet" href="./CSS/slick-theme.css">
+
 </head>
 <body>
     <div class="backgroundPic"><!-------背景圖-------->
-        <header class="page-header"> <!-------導覽列-------->
-            <div class="page-header-base">
-                <h1><a href="./Index.html"><img class="logo" src="./images/LOGO.svg" alt="Mooding-情緒追蹤網站"></a></h1>
-            <nav>
-                <ul class="main-ul">
-                    <li><a href="./LiveDiary.html">線上日記</a></li>
-                    <li><a href="./Consult.html">諮商服務</a></li>
-                    <li><a href="./test.html">心理量表</a></li>
-                    <li><a href="./Article.html">精選文章</a></li>
-                    <li class="li-space"></li>
-                    <li class="log-in"><a href="">登入</a></li>
-                    <li class="sign-up"><a href="">註冊</a></li>
-                </ul>
-            </nav>
-            </div>
-        </header>
-        <main>
-            <section class="main-banner"><!-------banner------->                
-                <div class="mb-pic">
-                    <div class="pic">
-                        <img src="images/read.svg" alt="">
-                    </div>
+        <header class="page_header dropdowns"><!-------導覽列-------->
+            <div class="header_inner">
+                <a href="./index.html" class="header_logo">
+                    <img src="./images/LOGO.svg" alt="">
+                </a>
+                <div class="header_navigation" id="nav">
+                    <nav class="header_navigation_nav">
+                        <ul class="header_navigation_list"><!-------選單li區-------->
+                            <li class="header_navigation_item">
+                                <a href="./LiveDiary.html">如何開始</a></li>
+                            <li class="header_navigation_item">
+                                <a href="./Consult.html">諮商服務</a></li>
+                            <li class="header_navigation_item">
+                                <a href="./test.html">心理量表</a></li>
+                            <li class="header_navigation_item">
+                                <a href="./Article.html">精選文章</a></li>
+                        </ul>
+                        <div class="header_navigation_btnArea"><!-------登入註冊區-------->
+                            <button class="header_navigation_log-in">登入</button>
+                            <button class="header_navigation_sign-up">註冊</button>
+                        </div>
+                    </nav>
                 </div>
-                <div class="mb-txt">
-                    <div class="txt">
-                        <h2>Mooding幫您統整了眾多文章</h2>
-                        <p>一直走不出分手的傷痛，或是常常跟家人合不來，來看看我們統整的精選心理文章，Mooding帶你走出情緒低潮的輪迴！</p>          
+                <button class="hamburger hamburger--collapse" type="button"><!-------漢堡按鈕-------->
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </header><!-------導覽列end-------->
+        <main>
+            <section class="main_banner"><!-------banner-------> 
+                <div class="main_banner_inner">
+                    <div class="mb_pic">
+                        <div class="pic">
+                            <img src="./images/article_banner.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="mb_right">
+                        <div class="mb_right_txt">
+                            <h1>Mooding情緒紓解文章</h1>
+                            <p>一直走不出分手的傷痛，或是常常跟家人合不來，來看看我們統整的精選心理文章，Mooding帶你走出情緒低潮的輪迴！</p>          
+                        </div>
                     </div>
                 </div>         
             </section>
-            <section class="content-Latest"><!-------最新文章------->
-                <div class="txt">
-                    <h3>最新文章</h3>
-                    <p>Latest Article</p>
-                </div>
-                <div class="Latest-list">
-                    <div class="txtArea">
-                        <p class="date">June.30.2022</p>
-                        <p class="title">為什麼成功的戀愛是一種心理治療？</p>
-                        <p>戀愛是人生中唯一自主選擇的關係，正因為可以選擇，我們的人生才有意義。我們在無意識中都將戀愛當作了心理治... </p>
-                        <button>閱讀更多></button>
+            <section class="content_latest"><!-------最新文章------->
+                <div class="content_latest_inner">
+                    <div class="content_latest_inner_txt">
+                        <h2>最新文章</h2>
+                        <p>Latest Article</p>
                     </div>
-                    <picture><img src="images/breakUp.jpg" alt=""></picture>
+                    <div class="Latest_list">
+                        <div class="txt_area">
+                            <p class="date">June.30.2022</p>
+                            <p class="title">為什麼成功的戀愛是一種心理治療？</p>
+                            <p>戀愛是人生中唯一自主選擇的關係，正因為可以選擇，我們的人生才有意義。我們在無意識中都將戀愛當作了心理治... </p>
+                            <button>閱讀更多 ➜</button>
+                        </div>
+                        <picture><img src="images/breakUp.jpg" alt=""></picture>
+                    </div>
                 </div>
             </section>
-            <section class="content-Articles"><!-------精選文章------->
-                <div class="txt">
-                    <h3>精選文章</h3>
-                    <p>Latest Article</p>
-                </div>
-                <div class="Articles-list"><!-------精選文章(底)------->
-                    <div class="search"><!-------精選文章(搜尋)------->
-                        <div class="list">
-                            <div class="wordBase"><a href="">全部</a></div>
-                            <div class="wordBase"><a href="">心理韌力</a></div>
-                            <div class="wordBase"><a href="">壓力因應</a></div>
-                            <div class="wordBase"><a href="">情緒困擾</a></div>
-                            <div class="wordBase"><a href="">青少年</a></div>
-                            <div class="wordBase"><a href="">女性壓力</a></div>
-                            <div class="wordBase"><a href="">家庭關係</a></div>
-                            <div class="wordBase"><a href="">正向管教</a></div>
-                            <div class="wordBase"><a href="">強迫症</a></div>
-                            <div class="wordBase"><a href="">情緒調適</a></div>
-                            <span class="space"></span>
-                            <button class="more">V</button>
+            <section class="content_articles"><!-------精選文章------->
+                <div class="content_articles_inner">
+                    <div class="txt">
+                        <h2>精選文章</h2>
+                        <p>Latest Article</p>
+                    </div>
+                    <div class="search"><!-------精選文章(專題標籤)------->
+                        <div class="search_list">
+                            <div class="search_list_title"> 專題標籤</div>
+                            <ul class="tags_list">
+                                <input type="radio" name="tags" id="all" checked>
+                                <li class="tags"><label for="all"><span>全部</span></label></li>
+
+                                <input type="radio" name="tags" id="marriage">
+                                <li class="tags"><label for="marriage"><span>家庭與婚姻</span></label></li>
+
+                                <input type="radio" name="tags" id="press">
+                                <li class="tags"><label for="press"><span>壓力</span></label></li>
+
+                                <input type="radio" name="tags" id="lost">
+                                <li class="tags"><label for="lost"><span>哀傷失落</span></label></li>
+
+                                <input type="radio" name="tags" id="confidence">
+                                <li class="tags"><label for="confidence"><span>自信</span></label></li>
+
+                                <input type="radio" name="tags" id="blue">
+                                <li class="tags"><label for="blue"><span>憂鬱</span></label></li>
+                                
+                                <input type="radio" name="tags" id="sex">
+                                <li class="tags"><label for="sex"><span>愛情兩性</span></label></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="cardBase"><!-------精選文章(文章卡)------->
-                        <a href="#">
+                    <div class="card_list"><!-------精選文章(文章卡底)------->
+                        <a href="javascript:" class="cards">
                             <div class="item">
                                 <div class="pic">
-                                    <img src="images/stress.jpg" alt="">
+                                    <img src="./images/stress.jpg" alt="">
                                 </div>
                                 <p class="date">June.30.2022</p>
                                 <p class="title">與壓力共舞</p>
+                                <div class="tags">
+                                    <ul>
+                                        <img src="./images/tags.svg" alt="">
+                                        <li><span>壓力</span></li>
+                                    </ul>
+                                </div>
                                 <p>面對壓力，學習良好的壓力管理能力似乎已成為現代生活中必要的課題。而好的壓力因應技巧千千百百種，但是真正...</p>
-                                <p class="view">357人瀏覽
+                                <div class="item_bottom">
+                                    <span class="view">357人瀏覽</span>
                                     <span class="arrow"></span>
-                                </p>
+                                </div>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="javascript:" class="cards">
                             <div class="item">
                                 <div class="pic">
-                                    <img src="images/break-up.jpg" alt="">
+                                    <img src="./images/break-up.jpg" alt="">
                                 </div>
                                 <p class="date">May.03.2022</p>
                                 <p class="title">談分手調適，分手後該怎麼辦?</p>
+                                <div class="tags">
+                                    <ul>
+                                        <img src="./images/tags.svg" alt="">
+                                        <li><span>愛情兩性</span></li>
+                                    </ul>
+                                </div>
                                 <p>時間常是療癒傷口的良藥，當自己面臨一段重要關係的結束，不管原先的關係...</p>
-                                <p class="view">487人瀏覽
+                                <div class="item_bottom">
+                                    <span class="view">487人瀏覽</span>
                                     <span class="arrow"></span>
-                                </p>
+                                </div>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="javascript:" class="cards">
                             <div class="item">
                                 <div class="pic">
-                                    <img src="images/specil.jpg" alt="">
+                                    <img src="./images/specil.jpg" alt="">
                                 </div>
                                 <p class="date">June.17.2022</p>
                                 <p class="title">你的獨一無二，值得被真心對待</p>
+                                <div class="tags">
+                                    <ul>
+                                        <img src="./images/tags.svg" alt="">
+                                        <li><span>自信</span></li>
+                                    </ul>
+                                </div>
                                 <p>不帶條件地接納全部的自己，無論你覺得這有多糟、多自卑，都不要緊，它是...</p>
-                                <p class="view">630人瀏覽
+                                <div class="item_bottom">
+                                    <span class="view">630人瀏覽</span>
                                     <span class="arrow"></span>
-                                </p>
+                                </div>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="javascript:" class="cards">
                             <div class="item">
                                 <div class="pic">
-                                    <img src="images/family-fight.jpg" alt="">
+                                    <img src="./images/family-fight.jpg" alt="">
                                 </div>
                                 <p class="date">April.25.2022</p>
                                 <p class="title">為什麼家人間彼此相愛卻又總是互相傷害？</p>
+                                <div class="tags">
+                                    <ul>
+                                        <img src="./images/tags.svg" alt="">
+                                        <li><span>家庭與婚姻</span></li>
+                                    </ul>
+                                </div>
                                 <p>家是人們的避風港，家人的支持與關懷是一個人向前邁進的動力，也是...</p>
-                                <p class="view">704人瀏覽
+                                <div class="item_bottom">
+                                    <span class="view">704人瀏覽</span>
                                     <span class="arrow"></span>
-                                </p>
+                                </div>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="javascript:" class="cards">
                             <div class="item">
                                 <div class="pic">
-                                    <img src="images/stress.jpg" alt="">
+                                    <img src="./images/breakUp.jpg" alt="">
                                 </div>
-                                <p class="date">June.30.2022</p>
-                                <p class="title">與壓力共舞</p>
-                                <p>面對壓力，學習良好的壓力管理能力似乎已成為現代生活中必要的課題。而好的壓力因應技巧千千百百種，但是真正...</p>
-                                <p class="view">357人瀏覽
+                                <p class="date">January.04.2022</p>
+                                <p class="title">為什麼成功的戀愛是一種心理治療？</p>
+                                <div class="tags">
+                                    <ul>
+                                        <img src="./images/tags.svg" alt="">
+                                        <li><span>家庭與婚姻</span></li>
+                                        <li><span>愛情兩性</span></li>
+                                    </ul>
+                                </div>
+                                <p>戀愛是人生中唯一自主選擇的關係，正因為可以選擇，我們的人生才有意義。我們在無意... </p>
+                                <div class="item_bottom">
+                                    <span class="view">187人瀏覽</span>
                                     <span class="arrow"></span>
-                                </p>
+                                </div>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="javascript:" class="cards">
                             <div class="item">
                                 <div class="pic">
-                                    <img src="images/break-up.jpg" alt="">
+                                    <img src="./images/be-yourslef.jpg" alt="">
                                 </div>
-                                <p class="date">May.03.2022</p>
-                                <p class="title">談分手調適，分手後該怎麼辦?</p>
-                                <p>時間常是療癒傷口的良藥，當自己面臨一段重要關係的結束，不管原先的關係...</p>
-                                <p class="view">487人瀏覽
+                                <p class="date">September.03.2022</p>
+                                <p class="title">成為你自己</p>
+                                <div class="tags">
+                                    <ul>
+                                        <img src="./images/tags.svg" alt="">
+                                        <li><span>家庭與婚姻</span></li>
+                                        <li><span>自信</span></li>
+                                    </ul>
+                                </div>
+                                <p>人生的悲劇從當個「乖孩子」開始。幼年時期曾因不安全依附關係而有恐懼的孩子，即使長大成人也不易擺脫陰影，他們總不斷揣... </p>
+                                <div class="item_bottom">
+                                    <span class="view">533人瀏覽</span>
                                     <span class="arrow"></span>
-                                </p>
+                                </div>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="javascript:" class="cards">
                             <div class="item">
                                 <div class="pic">
-                                    <img src="images/specil.jpg" alt="">
+                                    <img src="./images/feeling.jpg" alt="">
                                 </div>
-                                <p class="date">June.17.2022</p>
-                                <p class="title">你的獨一無二，值得被真心對待</p>
-                                <p>不帶條件地接納全部的自己，無論你覺得這有多糟、多自卑，都不要緊，它是...</p>
-                                <p class="view">630人瀏覽
+                                <p class="date">November.11.2022</p>
+                                <p class="title">療癒，從感受情緒開始</p>
+                                <div class="tags">
+                                    <ul>
+                                        <img src="./images/tags.svg" alt="">
+                                        <li><span>憂鬱</span></li>
+                                        <li><span>壓力</span></li>
+                                        <li><span>哀傷失落</span></li>
+                                    </ul>
+                                </div>
+                                <p>當你不敢去感受情緒，就無法真實活著；當你害怕心碎所以不敢去愛；害怕失敗所以不敢去嘗試；害怕未知的... </p>
+                                <div class="item_bottom">
+                                    <span class="view">862人瀏覽</span>
                                     <span class="arrow"></span>
-                                </p>
+                                </div>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="javascript:" class="cards">
                             <div class="item">
                                 <div class="pic">
-                                    <img src="images/family-fight.jpg" alt="">
+                                    <img src="./images/logotherapy.jpg" alt="">
                                 </div>
-                                <p class="date">April.25.2022</p>
-                                <p class="title">為什麼家人間彼此相愛卻又總是互相傷害？</p>
-                                <p>家是人們的避風港，家人的支持與關懷是一個人向前邁進的動力，也是...</p>
-                                <p class="view">704人瀏覽
+                                <p class="date">October.25.2022</p>
+                                <p class="title">淺談「意義治療法</p>
+                                <div class="tags">
+                                    <ul>
+                                        <img src="./images/tags.svg" alt="">
+                                        <li><span>憂鬱</span></li>
+                                        <li><span>自信</span></li>
+                                        <li><span>哀傷失落</span></li>
+                                    </ul>
+                                </div>
+                                <p>時間銀行是每一個人為他人的服務與付出，留存在時間銀行中，由後人來償還，這是一種「pay forward」的想法，也是「我為人... </p>
+                                <div class="item_bottom">
+                                    <span class="view">689人瀏覽</span>
                                     <span class="arrow"></span>
-                                </p>
+                                </div>
                             </div>
                         </a>
-                    </div>
-                    <div class="page-list"><!-------精選文章(頁數)------->
-                        <div class="page">
-                            <div class="wordBase"><a href="">第一頁</a></div>
-                            <div class="wordBase"><a href="">上一頁</a></div>
-                            <div class="wordBase"><a href="">1</a></div>
-                            <div class="wordBase"><a href="">2</a></div>
-                            <div class="wordBase"><a href="">3</a></div>
-                            <div class="wordBase"><a href="">4</a></div>
-                            <div class="wordBase"><a href="">5</a></div>
-                            <div class="wordBase"><a href="">下一頁</a></div>
-                            <div class="wordBase"><a href="">最後一頁</a></div>
-                        </div>
-                    </div>
+                    </div><!-------精選文章(文章卡底)------->
+                </div><!---inner end-->
             </section>
         </main>
         <footer><!----------footer----------->
-            <div class="footerBase">
-                <div class="iconItem">
-                    <a href="./Index.html"><div class="logoPic"><img src="images/whitelogo.svg" alt=""></div></a>
-                    <div class="socialPic">
-                        <a href=""><div class="pic"><img src="images/ig.svg" alt=""></div></a>
-                        <a href=""><div class="pic"><img src="images/twitter.svg" alt=""></div></a>
-                        <a href=""><div class="pic"><img src="images/FB.svg" alt=""></div></a>
+            <div class="footer">
+                <div class="footer_inner">
+                    <div class="iconItem">
+                        <a href="./Index.html"><div class="logoPic"><img src="images/whitelogo.svg" alt=""></div></a>
+                        <div class="socialPic">
+                            <a href=""><div class="pic"><img src="images/ig.svg" alt=""></div></a>
+                            <a href=""><div class="pic"><img src="images/twitter.svg" alt=""></div></a>
+                            <a href=""><div class="pic"><img src="images/FB.svg" alt=""></div></a>
+                        </div>
+                    </div>
+                    <div class="MenuItem">
+                        <div class="menu title">服務</div>
+                        <div class="menu"><a href="./LiveDiary.html">如何開始</a></div>
+                        <div class="menu"><a href="./Consult.html">諮商服務</a></div>
+                        <div class="menu"><a href="./test.html">心情量表</a></div>
+                        <div class="menu"><a href="./Article.html">精選文章</a></div>
+                    </div>
+                    <div class="contactItem">
+                        <div class="item title">幫助</div>
+                        <div class="item"><a href="">使用幫助</a></div>
+                        <div class="item"><a href="">聯絡我們</a></div>
+                        <div class="item"><a href="">心理師申請駐站</a></div>
+                        <div class="item null"><a href="">我是空的</a></div>
+                    </div>
+                    <div class="footer-space"></div>
+                    <div class="LogItem">
+                        <div class="log in"><a href="#">登入</a></div>
+                        <div class="log"><a href="#">註冊</a></div>
                     </div>
                 </div>
-                <div class="MenuItem">
-                    <div class="menu title">服務</div>
-                    <div class="menu"><a href="./LiveDiary.html">線上日記</a></div>
-                    <div class="menu"><a href="./Consult.html">諮商服務</a></div>
-                    <div class="menu"><a href="./test.html">心情量表</a></div>
-                    <div class="menu"><a href="./Article.html">精選文章</a></div>
+                <div class="footer_bottom">
+                    <div class="statement">本網站為緯育TibaMe前端工程師第77期學員專題作品，僅供學習、展示之用。
+                        若有侵權疑慮，請私訊 <a href="https://www.tibame.com/">[TibaMe-前端設計工程師養成班]</a>，後續由專人協助處理。</div>
+                    <div class="copyRight">2022 © All rights reserved</div> 
                 </div>
-                <div class="contactItem">
-                    <div class="item title">幫助</div>
-                    <div class="item"><a href="">使用幫助</a></div>
-                    <div class="item"><a href="">聯絡我們</a></div>
-                    <div class="item"><a href="">心理師申請駐站</a></div>
-                </div>
-                <div class="LogItem">
-                    <div class="log"><a href="#">登入</a></div>
-                    <div class="log"><a href="#">註冊</a></div>
-                </div>
-            </div>
-            <div class="
-            statement">本網站為緯育TibaMe前端工程師第77期學員專題作品，僅供學習、展示之用。
-                若有侵權疑慮，請私訊 <a href="https://www.tibame.com/">[TibaMe-前端設計工程師養成班]</a>，後續由專人協助處理。</div>
-            <div class="copyRight">2022 © All rights reserved</div>            
-        </footer>
+            </div>           
+        </footer><!----------footer end----------->
     </div><!-------背景圖-------->
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/modal_toggle.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/paper.js"></script>
 </body>
 </html>
