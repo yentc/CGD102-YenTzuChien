@@ -7,26 +7,45 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     <title>Mooding-情緒追蹤網站</title>
     <link rel="stylesheet" href="./CSS/reset.css">
-    <link rel="stylesheet" href="./CSS/test.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/gobal.css">
+    <link rel="stylesheet" href="./CSS/hamburgers.css">
+    <link rel="stylesheet" href="./CSS/slick.css">
+    <link rel="stylesheet" href="./CSS/slick-theme.css">
+
 </head>
 <body>
     <div class="backgroundPic"><!-------背景圖-------->
-        <header class="page-header"> <!-------導覽列-------->
-            <div class="page-header-base">
-                <h1><a href="./Index.html"><img class="logo" src="./images/LOGO.svg" alt="Mooding-情緒追蹤網站"></a></h1>
-            <nav>
-                <ul class="main-ul">
-                    <li><a href="./LiveDiary.html">線上日記</a></li>
-                    <li><a href="./Consult.html">諮商服務</a></li>
-                    <li><a href="./test.html">心理量表</a></li>
-                    <li><a href="./Article.html">精選文章</a></li>
-                    <li class="li-space"></li>
-                    <li class="log-in"><a href="">登入</a></li>
-                    <li class="sign-up"><a href="">註冊</a></li>
-                </ul>
-            </nav>
+        <header class="page_header dropdowns"><!-------導覽列-------->
+            <div class="header_inner">
+                <a href="./index.html" class="header_logo">
+                    <img src="./images/LOGO.svg" alt="">
+                </a>
+                <div class="header_navigation" id="nav">
+                    <nav class="header_navigation_nav">
+                        <ul class="header_navigation_list"><!-------選單li區-------->
+                            <li class="header_navigation_item">
+                                <a href="./LiveDiary.html">如何開始</a></li>
+                            <li class="header_navigation_item">
+                                <a href="./Consult.html">諮商服務</a></li>
+                            <li class="header_navigation_item">
+                                <a href="./test.html">心理量表</a></li>
+                            <li class="header_navigation_item">
+                                <a href="./Article.html">精選文章</a></li>
+                        </ul>
+                        <div class="header_navigation_btnArea"><!-------登入註冊區-------->
+                            <button class="header_navigation_log-in">登入</button>
+                            <button class="header_navigation_sign-up">註冊</button>
+                        </div>
+                    </nav>
+                </div>
+                <button class="hamburger hamburger--collapse" type="button"><!-------漢堡按鈕-------->
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
             </div>
-        </header>
+        </header><!-------導覽列end-------->
         <main>
             <section class="main-banner"><!-------banner------->                
                 <div class="mb-pic">
@@ -148,41 +167,50 @@
                     </div>
                 </div>
             </section>
+            <img src="./images/top.png" id="go_top"><!------go top按鈕------>
         </main>
         <footer><!----------footer----------->
-            <div class="footerBase">
-                <div class="iconItem">
-                    <a href="./Index.html"><div class="logoPic"><img src="images/whitelogo.svg" alt=""></div></a>
-                    <div class="socialPic">
-                        <a href=""><div class="pic"><img src="images/ig.svg" alt=""></div></a>
-                        <a href=""><div class="pic"><img src="images/twitter.svg" alt=""></div></a>
-                        <a href=""><div class="pic"><img src="images/FB.svg" alt=""></div></a>
+            <div class="footer">
+                <div class="footer_inner">
+                    <div class="iconItem">
+                        <a href="./Index.html"><div class="logoPic"><img src="images/whitelogo.svg" alt=""></div></a>
+                        <div class="socialPic">
+                            <a href=""><div class="pic"><img src="images/ig.svg" alt=""></div></a>
+                            <a href=""><div class="pic"><img src="images/twitter.svg" alt=""></div></a>
+                            <a href=""><div class="pic"><img src="images/FB.svg" alt=""></div></a>
+                        </div>
+                    </div>
+                    <div class="MenuItem">
+                        <div class="menu title">服務</div>
+                        <div class="menu"><a href="./LiveDiary.html">如何開始</a></div>
+                        <div class="menu"><a href="./Consult.html">諮商服務</a></div>
+                        <div class="menu"><a href="./test.html">心情量表</a></div>
+                        <div class="menu"><a href="./Article.html">精選文章</a></div>
+                    </div>
+                    <div class="contactItem">
+                        <div class="item title">幫助</div>
+                        <div class="item"><a href="">使用幫助</a></div>
+                        <div class="item"><a href="">聯絡我們</a></div>
+                        <div class="item"><a href="">心理師申請駐站</a></div>
+                        <div class="item null"><a href="">我是空的</a></div>
+                    </div>
+                    <div class="footer-space"></div>
+                    <div class="LogItem">
+                        <div class="log in"><a href="#">登入</a></div>
+                        <div class="log"><a href="#">註冊</a></div>
                     </div>
                 </div>
-                <div class="MenuItem">
-                    <div class="menu title">服務</div>
-                    <div class="menu"><a href="./LiveDiary.html">線上日記</a></div>
-                    <div class="menu"><a href="./Consult.html">諮商服務</a></div>
-                    <div class="menu"><a href="./test.html">心情量表</a></div>
-                    <div class="menu"><a href="./Article.html">精選文章</a></div>
+                <div class="footer_bottom">
+                    <div class="statement">本網站為緯育TibaMe前端工程師第77期學員專題作品，僅供學習、展示之用。
+                        若有侵權疑慮，請私訊 <a href="https://www.tibame.com/">[TibaMe-前端設計工程師養成班]</a>，後續由專人協助處理。</div>
+                    <div class="copyRight">2022 © All rights reserved</div> 
                 </div>
-                <div class="contactItem">
-                    <div class="item title">幫助</div>
-                    <div class="item"><a href="">使用幫助</a></div>
-                    <div class="item"><a href="">聯絡我們</a></div>
-                    <div class="item"><a href="">心理師申請駐站</a></div>
-                </div>
-                <div class="LogItem">
-                    <div class="log"><a href="#">登入</a></div>
-                    <div class="log"><a href="#">註冊</a></div>
-                </div>
-            </div>
-            <div class="
-            statement">本網站為緯育TibaMe前端工程師第77期學員專題作品，僅供學習、展示之用。
-                若有侵權疑慮，請私訊 <a href="https://www.tibame.com/">[TibaMe-前端設計工程師養成班]</a>，後續由專人協助處理。</div>
-            <div class="copyRight">2022 © All rights reserved</div>            
-        </footer>
+            </div>           
+        </footer><!----------footer end----------->
     </div><!-------背景圖-------->
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/modal_toggle.js"></script>
+    <script src="./js/slick.js"></script>
 </body>
 </html>
             
