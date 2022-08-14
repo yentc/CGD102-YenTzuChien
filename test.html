@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./CSS/hamburgers.css">
     <link rel="stylesheet" href="./CSS/slick.css">
     <link rel="stylesheet" href="./CSS/slick-theme.css">
+    <link rel="stylesheet" href="./CSS/aos.css">
+</head>
 
 </head>
 <body>
@@ -87,8 +89,8 @@
                         <p>Tests</p>
                     </div>
                     <div class="tests_list"><!-------精選量表(量表卡)------->
-                        <div class="cardBase">                         
-                            <div class="item">
+                        <div class="cardBase" id="list_wrapper">                         
+                            <div class="list_item">
                                 <a href="#">
                                     <div class="pic">
                                         <img src="images/older-man.png" alt="">
@@ -104,7 +106,7 @@
                                 </a>
                             </div>
                         
-                            <div class="item">
+                            <div class="list_item">
                                 <a href="#">
                                     <div class="pic">
                                         <img src="./images/sad-girl-sits-on-the-floor.png" alt="">
@@ -121,7 +123,7 @@
                             </div>
 
                         
-                            <div class="item">
+                            <div class="list_item">
                                 <a href="#">
                                     <div class="pic">
                                         <img src="images/mother-protects-her-child.png" alt="">
@@ -138,7 +140,7 @@
                             </div>
                         
                         
-                            <div class="item">
+                            <div class="list_item">
                                 <a href="#">
                                     <div class="pic">
                                         <img src="./images/helps-a-sad-lonely-woman.png" alt="">
@@ -155,7 +157,7 @@
                             </div>
 
                         
-                            <div class="item">
+                            <div class="list_item">
                                 <a href="#">
                                     <div class="pic">
                                         <img src="./images/love-family.jpg"alt="">
@@ -170,16 +172,41 @@
                                     </div>
                                 </a>
                             </div>
+
+                            <div class="list_item">
+                                <a href="#">
+                                    <div class="pic">
+                                        <img src="./images/women-in-society.jpg"alt="">
+                                    </div>
+                                    <div class="txt">
+                                        <p class="title">創傷後壓力症(PTSD)量表</p>
+                                        <p class="word">創傷後壓力症，是指人在遭遇或對抗重大壓力後，其心理狀態產生失調的問題。 這些經驗包括親身或目...</p>
+                                        <div class="txt_bottom">
+                                            <p class="do"> 621人已測驗</p>
+                                            <span class="arrow"></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="list_item">
+                                <a href="#">
+                                    <div class="pic">
+                                        <img src="./images/woman-look-in-mirror.jpg"alt="">
+                                    </div>
+                                    <div class="txt">
+                                        <p class="title">自信心自我檢測</p>
+                                        <p class="word">自信心是一種內在的精神力量，它能鼓舞人們去克服困難，不斷進步。美國教育家卡...</p>
+                                        <div class="txt_bottom">
+                                            <p class="do"> 942人已測驗</p>
+                                            <span class="arrow"></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="page_list"><!-------精選量表(頁數)------->
-                        <div class="page">
-                            <button class="wordBase back"></button>
-                            <div class="wordBase"><a href="">1</a></div>
-                            <div class="wordBase"><a href="">2</a></div>
-                            <button class="wordBase next"></button>
-                        </div>
-                    </div>
+                    <div id="pagination_container"></div><!------頁籤------>
                 </div>
             </section>
             <img src="./images/top.png" id="go_top"><!------go top按鈕------>
@@ -226,6 +253,32 @@
     <script src="./js/jquery-3.6.0.js"></script>
     <script src="./js/modal_toggle.js"></script>
     <script src="./js/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.min.js"></script>
+
+    <!-------分頁列-------->
+    <script>
+        //每個頁面顯示幾個項目
+        var perPage = 4 ;
+        //總共有多少的項目
+        var numItems = $(".list_item").length;
+
+        $(".list_item").slice(perPage).hide();
+
+        $('#pagination_container').pagination({
+
+            items:numItems,
+            itemsOnPage: perPage,
+            prevText: "&laquo;",
+            nextText: "&raquo;",
+            onPageClick: function(pageNumber){
+                //計算出 起始 以及結束
+
+                var from = perPage*(pageNumber-1);
+                var to = from + perPage;
+                $(".list_item").hide().slice(from,to).show();
+            }
+        })
+    </script>
 </body>
 </html>
             
