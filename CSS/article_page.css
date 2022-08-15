@@ -5,3 +5,43 @@ main{
     width: 100%;
     display: block;
 }
+/*===========bread===========*/
+.bread{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 70px;
+    font-size: 14px;
+}
+.bread a{
+    display: inline-block;
+    margin-right: 5px;
+    color: var(--blue-color);
+    padding: 0px 0px 3px 0px ;
+    border-bottom: 1px solid transparent;
+}
+.bread a:hover{
+    color: var(--blue-color);
+    border-bottom: 1px solid var(--blue-color);
+}
+.bread .now{
+    display: inline-block;
+    margin-right: 5px;
+    color: var(--blue-color);
+    padding: 0px 0px 3px 0px ;
+    border-bottom: 1px solid var(--blue-color);
+}
+/*===========中間左右大區塊===========*/
+.main_content{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.main_content .title{
+    font-size: 28px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    line-height: 150%;
+    color: var(--blue-color);
+}
