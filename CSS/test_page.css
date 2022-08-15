@@ -333,6 +333,7 @@ aside{
     width: 85%;
     cursor: pointer;
     border: 0;
+    color: #000;
 }
 .right_fb button:hover{
     background-color: rgb(231, 231, 231);
