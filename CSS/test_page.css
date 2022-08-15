@@ -166,6 +166,73 @@ article .title{
 .article_text strong{
     color: var(--red-color);
 }
+.if_you{
+    width: 100%;
+    color: var(--blue-color);
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    margin-bottom: 35px;
+}
+/*===========form===========*/
+form{
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px 0px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 3px rgb(150, 150, 150);
+}
+.form_title{
+    font-size: 24px;
+    color: var(--blue-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+form li{
+    margin-bottom: 25px;
+}
+form .topic{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--blue-color);
+    margin-bottom: 10px;
+    line-height: 26px;
+}
+form li input{
+    display: none;
+}
+form li label{
+    padding: 8px 15px;
+    border-radius: 8px ;
+    background-color: rgb(238, 237, 237);
+    color: var(--blue-color);
+    cursor: pointer;
+}
+form li label:hover{
+    background-color: var(--skyBlue-color);
+    color: white;
+}
+form input:checked + label {
+    background-color: var(--skyBlue-color);
+    color: white;
+}
+.submit{
+    background-color: var(--red-color);
+    border: 0;
+    padding: 8px 15px;
+    border-radius: 8px; 
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: rgb(255, 57, 57);
+}
 /*===========去諮商按鈕===========*/
 .go_consult{
     width: 100%;
