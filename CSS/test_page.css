@@ -163,6 +163,9 @@ article .title{
 .article_text span{
     color: var(--red-color);
 }
+.article_text strong{
+    color: var(--red-color);
+}
 /*===========去諮商按鈕===========*/
 .go_consult{
     width: 100%;
