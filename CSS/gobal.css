@@ -114,12 +114,10 @@ button.hamburger{
     padding: 10px;
     font-size: 16px;
 }
-.header_navigation_list li:hover{
-    border-bottom: var(--red-color) 2px solid;
-}
 .header_navigation_list li:hover a{
     color: var(--red-color);
 }
+
 .header_navigation_btnArea{
     display: flex;
     width: 23%;

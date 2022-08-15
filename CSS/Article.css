@@ -5,6 +5,10 @@ main{
     width: 100%;
     display: block;
 }
+.header_navigation_list li:nth-child(4) a{
+    border-bottom: 2px solid var(--red-color);
+    color: var(--red-color);
+}
 /* --------------------------main_banner---------------------------- */
 .main_banner{
     min-width: 100%;

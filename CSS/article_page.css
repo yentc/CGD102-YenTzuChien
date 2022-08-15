@@ -5,6 +5,10 @@ main{
     width: 100%;
     display: block;
 }
+.header_navigation_list li:nth-child(4) a{
+    border-bottom: 2px solid var(--red-color);
+    color: var(--red-color);
+}
 /*===========bread===========*/
 .bread{
     width: 1000px;
@@ -53,7 +57,7 @@ article .title{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 15px 0px 30px 0px;
+    padding: 15px 0px 25px 0px;
 }
 .author_area .author{
     width: 50%;
@@ -88,8 +92,16 @@ article .title{
     align-self: flex-end;
     color: var(--blue-color);
 }
+.article_pic{
+    width: 100%;
+    overflow: hidden;
+}
+.article_pic img{
+    border-radius: 10px;
+}
 
 /*===========右邊===========*/
 aside{
+    display: block;
     width: 35%;
 }
