@@ -26,6 +26,7 @@ main{
     justify-content: center;
 }
 .mb_right .mb_right_txt h1{
+    letter-spacing: 1px;
     font-size: 40px;
     padding: 140px 0px 20px 0px;
     font-weight: 600;

@@ -19,6 +19,7 @@ main{
     width: 1000px;
 }
 .main_banner_inner h1{
+    letter-spacing: 1px;
     width: 100%;
     text-align: center;
     font-size: 38px;

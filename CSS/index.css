@@ -23,6 +23,7 @@
     width: 540px;
 }
 .main_banner_slogan{
+    letter-spacing: 1px;
     font-size: 48px;
     padding: 40px 0px 0px 0px;
     font-weight: 600;

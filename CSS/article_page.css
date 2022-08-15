@@ -38,10 +38,58 @@ main{
     margin: 0 auto;
     margin-top: 30px;
 }
-.main_content .title{
+/*===========左邊===========*/
+article{
+    width: 60%;
+}
+article .title{
     font-size: 28px;
     letter-spacing: 2px;
     font-weight: 600;
     line-height: 150%;
     color: var(--blue-color);
+}
+.author_area{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px 30px 0px;
+}
+.author_area .author{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.author_area .head{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 50%;
+}
+.author .head img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.author .author_identity{
+    width:80%;
+    padding-left: 8px;
+    display: inline-block;
+}
+.Profession{
+    padding-left: 3px;
+    font-size: 14px;
+    color: var(--gray-color);
+}
+.date{
+    width: 17%;
+    display: inline-block;
+    align-self: flex-end;
+    color: var(--blue-color);
+}
+
+/*===========右邊===========*/
+aside{
+    width: 35%;
 }

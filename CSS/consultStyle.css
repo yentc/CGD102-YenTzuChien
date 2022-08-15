@@ -20,6 +20,7 @@ main{
     text-align: center;
 }
 .main_banner_inner h1{
+    letter-spacing: 1px;
     width: 100%;
     text-align: center;
     font-size: 40px;
