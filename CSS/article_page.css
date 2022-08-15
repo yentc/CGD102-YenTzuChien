@@ -34,6 +34,22 @@ main{
     padding: 0px 0px 3px 0px ;
     border-bottom: 1px solid var(--blue-color);
 }
+/*====== 行動版 RWD | 320px ~ 768px ======*/
+@media screen and (min-width: 320px) and (max-width: 767.98px){
+.bread{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+}
+/*====== 行動版 RWD | 768px ~ 1200px ======*/
+@media screen and (min-width: 768px) and (max-width: 1199.98px){
+.bread{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+}
 /*===========中間左右大區塊===========*/
 .main_content{
     width: 1000px;
@@ -41,6 +57,21 @@ main{
     justify-content: space-between;
     margin: 0 auto;
     margin-top: 30px;
+}
+/*====== 行動版 RWD | 320px ~ 768px ======*/
+@media screen and (min-width: 320px) and (max-width: 767.98px){
+.main_content{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+}
+}
+/*====== 行動版 RWD | 768px ~ 1200px ======*/
+@media screen and (min-width: 768px) and (max-width: 1199.98px){
+.main_content{
+    width: 90%;
+}
 }
 /*===========左邊===========*/
 article{
@@ -173,6 +204,22 @@ article .title{
 }
 .keyword_tag_wrapper li:hover{
     background-color: var(--red-color);
+}
+/*====== 行動版 RWD | 320px ~ 768px ======*/
+@media screen and (min-width: 320px) and (max-width: 767.98px){
+article{
+    width: 100%;
+}
+.date{
+    width: 26%;
+}
+}
+/*====== 行動版 RWD | 768px ~ 1200px ======*/
+@media screen and (min-width: 768px) and (max-width: 1199.98px){
+article{
+    width: 65%;
+}
+
 }
 /*===========右邊===========*/
 aside{
@@ -312,6 +359,13 @@ aside{
 .mare_author a:hover{
     border-bottom: 1px solid var(--red-color);   
 }
+/*====== 行動版 RWD | 320px ~ 768px ======*/
+@media screen and (min-width: 320px) and (max-width: 767.98px){
+aside{
+    display: block;
+    width: 100%;
+}
+}
 /*===========line===========*/
 .line{
     width: 100%;
@@ -401,4 +455,24 @@ aside{
 }
 .slick-dots {
     margin: 20px 0 0 0;
+}
+/*====== 行動版 RWD | 320px ~ 768px ======*/
+@media screen and (min-width: 320px) and (max-width: 767.98px){
+.view_interrelate_inner{
+    width: 100%;
+}
+.carousel_container{
+    width: 100%;
+    height: 100%;
+}
+}
+/*====== 行動版 RWD | 768px ~ 1200px ======*/
+@media screen and (min-width: 768px) and (max-width: 1199.98px){
+.view_interrelate_inner{
+    width: 100%;
+}
+.carousel_container{
+    width: 100%;
+    height: 100%;
+}
 }
