@@ -395,7 +395,7 @@ input:checked + li > label > span{
     justify-content: space-between;
 }
 .card_list .item .view{
-    font-size: 10px;
+    font-size: 12px;
     color: var(--gray-color)
 }
 .card_list .item .arrow{
