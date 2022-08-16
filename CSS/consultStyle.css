@@ -460,6 +460,7 @@ main{
     list-style: decimal;
 }
 .Notice_base .Notice_base_bottom{
+    width: 100%;
     border-top: rgb(196, 196, 196) 2px solid;
     display: flex;
     flex-wrap: wrap;
