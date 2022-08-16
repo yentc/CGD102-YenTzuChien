@@ -113,7 +113,7 @@ article .title{
     display: inline-block;
 }
 .Profession{
-    padding-left: 3px;
+    /* padding-left: 3px; */
     font-size: 14px;
     color: var(--gray-color);
 }
