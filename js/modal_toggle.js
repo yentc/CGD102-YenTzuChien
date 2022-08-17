@@ -14,7 +14,22 @@ $(function(){
     $("button.hamburger").on("click", function(){
     $("#nav").fadeToggle();
   });
+
+
+  // tags_switch_button切換
+  $(".list_switch").on("click", function(){
+    $(this).toggleClass("is-active");
+  });
+  
+   // 點擊.tags_switch_button按鈕，導覽列縮放
+    $("#list_switch").on("click", function(){
+    $("#tags").slideToggle();
+  });
+
+
+
     
+
     // // 開啟 登入 Modal彈跳視窗
     // $("button.btn_modal_login").on("click", function(){
     //   $("div.login_overlay").fadeIn();

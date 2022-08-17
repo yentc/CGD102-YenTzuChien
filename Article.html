@@ -88,28 +88,35 @@
                     <div class="search"><!-------精選文章(專題標籤)------->
                         <div class="search_list">
                             <div class="search_list_title"> 專題標籤</div>
-                            <ul class="tags_list">
-                                <input type="radio" name="tags" id="all" checked>
-                                <li class="tags"><label for="all"><span>全部</span></label></li>
+                            <input type="checkbox" id="list_switch">
+                            <label for="list_switch" class="switch_button">
+                                <span></span>
+                                <span></span>
+                            </label>
+                            <div class="tags_list_base" id="tags">
+                                <ul class="tags_list">
+                                    <input type="radio" name="tags" id="all" checked>
+                                    <li class="tags"><label for="all"><span>全部</span></label></li>
 
-                                <input type="radio" name="tags" id="marriage">
-                                <li class="tags"><label for="marriage"><span>家庭與婚姻</span></label></li>
+                                    <input type="radio" name="tags" id="marriage">
+                                    <li class="tags"><label for="marriage"><span>家庭與婚姻</span></label></li>
 
-                                <input type="radio" name="tags" id="press">
-                                <li class="tags"><label for="press"><span>壓力</span></label></li>
+                                    <input type="radio" name="tags" id="press">
+                                    <li class="tags"><label for="press"><span>壓力</span></label></li>
 
-                                <input type="radio" name="tags" id="lost">
-                                <li class="tags"><label for="lost"><span>哀傷失落</span></label></li>
+                                    <input type="radio" name="tags" id="lost">
+                                    <li class="tags"><label for="lost"><span>哀傷失落</span></label></li>
 
-                                <input type="radio" name="tags" id="confidence">
-                                <li class="tags"><label for="confidence"><span>自信</span></label></li>
+                                    <input type="radio" name="tags" id="confidence">
+                                    <li class="tags"><label for="confidence"><span>自信</span></label></li>
 
-                                <input type="radio" name="tags" id="blue">
-                                <li class="tags"><label for="blue"><span>憂鬱</span></label></li>
-                                
-                                <input type="radio" name="tags" id="sex">
-                                <li class="tags"><label for="sex"><span>愛情兩性</span></label></li>
-                            </ul>
+                                    <input type="radio" name="tags" id="blue">
+                                    <li class="tags"><label for="blue"><span>憂鬱</span></label></li>
+                                    
+                                    <input type="radio" name="tags" id="sex">
+                                    <li class="tags"><label for="sex"><span>愛情兩性</span></label></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="card_list"><!-------精選文章(文章卡底)------->
@@ -327,5 +334,24 @@
     <script src="./js/modal_toggle.js"></script>
     <script src="./js/slick.js"></script>
     <script src="./js/paper.js"></script>
+    <!-- // $(document).ready(function(){
+    //     $(".answerall").hide();
+
+    //     $(".txt").click(function () {
+    //         $(this).next().slideToggle();
+
+    //         if($(this).find("strong").text()=="▼"){
+
+    //         $(this).children("strong").text("▲").animate({
+    //         rotate:"-180deg"
+    //         },500)
+
+    //         }else{
+    //         $(this).children("strong").text("▼").animate({
+    //         rotate:"0deg"
+    //         },500)
+    //         }
+    //     });
+    // }); -->
 </body>
 </html>

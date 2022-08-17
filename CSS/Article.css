@@ -261,7 +261,9 @@ main{
     text-align: center;
     border-bottom: 2px solid rgb(255, 215, 215);
 }
+
 .search_list_title {
+    width: 20%;
     font-size: 26px;
     color: var(--red-color);
     font-weight: 600;
@@ -275,10 +277,15 @@ input{
     display: inline-block;
     vertical-align: middle;
 }
+.tags_list_base{
+    width: 70%;
+    display: flex;
+    justify-content: end;
+}
 .tags_list{
     display: flex;
-    width: 70%;
-    justify-content: space-around;
+    width: 100%;
+    justify-content: space-between;
 }
 .tags_list span{
     font-size: 18px;
@@ -298,6 +305,38 @@ input{
 input:checked + li > label > span{
     color: var(--red-color);
     border-bottom: 2px solid var(--red-color);
+}
+/*=====標籤下拉按鈕=====*/
+
+.switch_button{
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: var(--red-color);
+    border-radius: 50%;
+    border: 0;
+    margin-bottom: 5px;
+}
+.switch_button span{
+    margin: auto;
+    width: 20px;
+    height: 3px;
+    background-color: #FFF;
+    border-radius: 3px;
+    position: absolute;
+    left: 5px;
+    top: 14px;
+    transition: .3s ease-in-out;
+}
+.switch_button span:first-child {
+    transform: rotate(90deg);
+}
+#list_switch:checked ~ .switch_button span:first-child {
+    transform: rotate(0deg);
+}
+#list_switch:checked ~ .switch_button:nth-child(2) {
+    transform: rotate(180deg);
 }
 /*-----js 啟動隱藏-----*/
 .hide{
@@ -381,13 +420,13 @@ input:checked + li > label > span{
     border-radius: 0px 5px 0px 5px;
     /* transform: skew(-20deg); */
 }
+
 .card_list p{
     font-size: 14px;
     line-height: 24px;
     color: var(--gray-color);
     padding: 15px 0px 25px 0px ;
 }
-
 .card_list .item_bottom{
     width: 100%;
     height: 100%;
@@ -412,24 +451,60 @@ input:checked + li > label > span{
     transform: none; 
     background-image: url('../images/arrow-red.svg');
 }
+
 /*====== 行動版 RWD | 320px ~ 768px ======*/
 @media screen and (min-width: 320px) and (max-width: 767.98px){
 .content_articles_inner{
     width: 90%;
     padding: 70px 0px 80px 0px;
 }
+/*標籤下拉*/
 .search_list{
     flex-wrap: wrap;
 }
+.search_list_title {
+    width: 38%;
+}
+.tags_list_base{
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    width: 100%; 
+}
 .tags_list {
     display: flex;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     width: 100%;
-    justify-content: space-between;
+    height: 100%;
+    margin-top: 10px;
+}
+.tags{
+    margin: 8px;
 }
 .tags_list span{
-    font-size: 14px;
-    height: 105%;
+    font-size: 16px;
+    display: inline-block;
+    height: 100%;
+    padding: 8px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(255, 163, 163);
+    border-radius: 0px 10px 0px 10px;
+}
+.tags_list span:hover{
+    color: white;
+    background-color: var(--red-color);
+}
+input:checked + li > label > span{
+    color: white;
+    background-color: var(--red-color);
+    border-bottom: 0px;
+}
+
+
+.switch_button{
+    display: flex;
 }
 .card_list{
     justify-content: center;
@@ -438,6 +513,8 @@ input:checked + li > label > span{
     max-width: 260px;
     margin: 20px 0px 20px 0px ;
 }
+
+
 }
 /*====== 行動版 RWD | 768px ~ 1200px ======*/
 @media screen and (min-width: 768px) and (max-width: 1199.98px){
