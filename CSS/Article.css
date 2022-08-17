@@ -463,7 +463,7 @@ input:checked + li > label > span{
     flex-wrap: wrap;
 }
 .search_list_title {
-    width: 38%;
+    width: 40%;
 }
 .tags_list_base{
     display: none;
