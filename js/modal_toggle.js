@@ -16,10 +16,6 @@ $(function(){
   });
 
 
-  // tags_switch_button切換
-  $(".list_switch").on("click", function(){
-    $(this).toggleClass("is-active");
-  });
   
    // 點擊.tags_switch_button按鈕，導覽列縮放
     $("#list_switch").on("click", function(){
