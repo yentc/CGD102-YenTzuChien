@@ -26,25 +26,25 @@ $(function(){
 
     
 
-    // // 開啟 登入 Modal彈跳視窗
-    // $("button.btn_modal_login").on("click", function(){
-    //   $("div.login_overlay").fadeIn();
-    // });
+    // 開啟 登入 Modal彈跳視窗
+    $(".header_navigation_log-in").on("click", function(){
+      $(".login_overlay").fadeIn();
+    });
     
-    // // 關閉 登入 Modal彈跳視窗
-    // $("button.btn_modal_login_close").on("click", function(){
-    //   $("div.login_overlay").fadeOut();
-    // });
+    // 關閉 登入 Modal彈跳視窗
+    $(".btn_modal_login_close").on("click", function(){
+      $(".login_overlay").fadeOut();
+    });
   
-    // // 開啟 註冊 Modal彈跳視窗
-    // $("button.btn_modal_signup").on("click", function(){
-    //   $("div.signup_overlay").fadeIn();
-    // });
+    // 開啟 註冊 Modal彈跳視窗
+    $(".header_navigation_sign-up").on("click", function(){
+      $(".signup_overlay").fadeIn();
+    });
     
-    // // 關閉 註冊 Modal彈跳視窗
-    // $("button.btn_modal_signup_close").on("click", function(){
-    //   $("div.signup_overlay").fadeOut();
-    // });
+    // 關閉 註冊 Modal彈跳視窗
+    $(".btn_modal_signup_close").on("click", function(){
+      $(".signup_overlay").fadeOut();
+    });
   
     // //nav登入按鈕
     // let btn_login = document.getElementsByClassName("btn_modal_login")[0];

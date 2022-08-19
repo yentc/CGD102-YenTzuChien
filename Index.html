@@ -19,30 +19,48 @@
         <!--登入彈窗-->
         <div class="login_overlay">
             <div class="modal_article">
-                <div class="modal_header">
-                    <img src="./images/LOGO.svg" alt="" class="logo_modal">
-                    <div class="modal_title">登入Mooding</div>
-                    <button type="button" class="btn_modal_login_close close">×</button>
+                <button type="button" class="btn_modal_login_close">×</button>
+                <div class="modal_left">
+                    <div class="free_join_us">免費加入我們!</div>
+                    <div class="modal_left_pic"><img src="./images/mainPic.svg" alt=""></div>
+                    <div class="already">已經有帳號嗎? 點此<a href="">登入<a href=""></a></div>
                 </div>
-                <div class="modal_body">
-                    <form action="">
+                <div class="modal_right">
+                    <div class="logo_modal"><img src="./images/LOGO.svg" alt=""></div>
+                    <div class="modal_title">註冊帳號</div>
+                    <form action="" class="modal_form">
+                        <a href="" class="fb_login"><img src="" alt="">使用Facebook繼續登入</a>
+                        <a href="" class="google_login"><img src="" alt="">使用Google繼續登入</a>
+                        <div class="or">或是</div>
                         <input type="email" placeholder="輸入電子郵件" class="modal_email">
                         <input type="password" placeholder="輸入密碼" class="modal_password">
-                        <button type="submit" class="btn_signup">登入</button>
+                        <button type="submit" class="btn_signup">註冊</button>
                     </form>
-                    <div class="other_login">
-                        <div class="or">或是</div>
-                    </div>
                 </div>
-                <div class="modal_footer"></div>
             </div>
         </div>
         <!--註冊彈窗-->
-        <div class="sinup_overlay">
+        <div class="signup_overlay">
             <div class="modal_article">
-                <div class="modal_header"></div>
-                <div class="modal_body"></div>
-                <div class="modal_footer"></div>
+                <button type="button" class="btn_modal_signup_close">×</button>
+                <div class="modal_left">
+                    <div class="free_join_us">歡迎回來!</div>
+                    <div class="modalRight_left_pic"><img src="./images/consultBannerX400.svg" alt=""></div>
+                    <div class="already">還沒有帳號嗎?點此<a href="">註冊</a></div>
+                </div>
+                <div class="modal_right">
+                    <div class="logo_modal"><img src="./images/LOGO.svg" alt="" class="logo_modal"></div>
+                    <div class="modal_title">登入Mooding</div>
+                    <form action="" class="modal_form">
+                        <a href="" class="fb_login"><img src="" alt="">使用Facebook繼續登入</a>
+                        <a href="" class="google_login"><img src="" alt="">使用Google繼續登入</a>
+                        <div class="or">或是</div>
+                        <input type="email" placeholder="輸入電子郵件" class="modal_email">
+                        <input type="password" placeholder="輸入密碼" class="modal_password">
+                        <button type="submit" class="btn_signup">登入</button>
+                        <a href="" class="forget_password">忘記密碼?</a>
+                    </form>
+                </div>
             </div>
         </div>
         <header class="page_header dropdowns"><!-------導覽列-------->
