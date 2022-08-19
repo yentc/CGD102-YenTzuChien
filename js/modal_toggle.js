@@ -45,6 +45,38 @@ $(function(){
     $(".btn_modal_signup_close").on("click", function(){
       $(".signup_overlay").fadeOut();
     });
+
+    //主banner的開始寫日記 彈跳視窗
+    $(".btn_action").on("click",function(){
+      $(".login_overlay").fadeIn();
+    });
+
+    //廣告的開始寫日記 彈跳視窗
+    $(".advertise_btn").on("click",function(){
+      $(".login_overlay").fadeIn();
+    });
+
+    //立即註冊 彈跳視窗
+    $(".signup_now").on("click",function(){
+      $(".signup_overlay").fadeIn();
+    });
+
+    //預約線上諮詢 彈跳視窗
+    $(".btn_consult_online").on("click",function(){
+      $(".login_overlay").fadeIn();
+    });
+
+    //footer  登入彈跳視窗
+    $(".log_in").on("click",function(){
+      $(".login_overlay").fadeIn();
+    });
+
+    //footer  註冊彈跳視窗
+    $(".sign_up").on("click",function(){
+      $(".signup_overlay").fadeIn();
+    });
+
+    
   
     // //nav登入按鈕
     // let btn_login = document.getElementsByClassName("btn_modal_login")[0];
