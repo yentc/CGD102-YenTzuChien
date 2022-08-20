@@ -46,6 +46,27 @@ $(function(){
       $(".signup_overlay").fadeOut();
     });
 
+    // 登入介面 還沒有帳號?點此註冊 關閉當前視窗
+    $(".havent_span").on("click", function(){
+      $(".login_overlay").fadeOut();
+    });
+
+    // 登入介面 還沒有帳號?點此註冊 開啟註冊視窗
+    $(".havent_span").on("click", function(){
+      $(".signup_overlay").fadeIn();
+    });
+
+    // 註冊介面 已有帳號?點此登入 關閉當前視窗
+    $(".already_span").on("click", function(){
+      $(".signup_overlay").fadeOut();
+    });
+
+    // 註冊介面 已有帳號?點此登入 開啟註冊視窗
+    $(".already_span").on("click", function(){
+      $(".login_overlay").fadeIn();
+    });
+
+
     //主banner的開始寫日記 彈跳視窗
     $(".btn_action").on("click",function(){
       $(".login_overlay").fadeIn();

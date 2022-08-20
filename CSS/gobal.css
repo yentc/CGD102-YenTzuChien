@@ -109,15 +109,16 @@ h2::before{
     width: 80%;
     vertical-align: text-bottom;
 }
-.already{
+.already , .havent{
     text-align: center;
     font-size: 16px;
     margin-top: 80px;
     font-weight: 600;
     color: var(--blue-color);
 }
-.already a{
+.already span,.havent span{
     color: var(--red-color);
+    cursor: pointer;
 }
 .modal_right{
     width: 50%;
