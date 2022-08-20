@@ -260,14 +260,63 @@ h2::before{
     width: 90%;
     height: 80vh;
 }
+.btn_modal_login_close{
+    right: 20px;
+}
 .modal_left{
     display: none;
 }
 .modal_right{
     width: 100%;
 }
+.logo_modal {
+    margin-top: 30px;
+}
 .logo_modal img{
-    width: 70%;
+    width: 50%;
+}
+.modal_title{
+    font-size: 16px;
+}
+.fb_login{
+    width: 80%;
+    margin-top: 20px;
+    padding: 13px 0px;
+    font-size: 16px;
+}
+.google_login{
+    width: 80%;
+    margin-top: 20px;
+    padding: 13px 0px;
+    font-size: 16px;
+}
+.or{
+    font-size: 14px;
+    padding: 20px 0px 0px 0px;
+
+}
+.modal_email{
+    width: 80%;
+    margin-top: 20px;
+    padding: 13px 0px;
+    font-size: 16px;
+}
+
+.modal_password{
+    width: 80%;
+    margin-top: 20px;
+    padding: 13px 0px;
+    font-size: 16px;
+}
+.btn_signup{
+    width: 80%;
+    margin-top: 20px;
+    padding: 13px 0px;
+    font-size: 16px;
+}
+.forget_password{
+    display: inline-block;
+    margin-top: 30px;
 }
 }
 /* ----------------------------header-------------------------------- */

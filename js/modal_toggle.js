@@ -66,6 +66,7 @@ $(function(){
       $(".login_overlay").fadeIn();
     });
 
+
     //footer  登入彈跳視窗
     $(".log_in").on("click",function(){
       $(".login_overlay").fadeIn();
