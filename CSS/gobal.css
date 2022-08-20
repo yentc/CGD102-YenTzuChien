@@ -59,7 +59,6 @@ h2::before{
     width: 70%;
     height: 90vh;
     border-radius: 10px;
-    box-shadow: 0 0 10px #ddd;
     padding: 10px;
     position: absolute;
     top: 50%;

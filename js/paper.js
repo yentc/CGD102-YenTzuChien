@@ -1,3 +1,5 @@
+//by Tibame Sleep Note
+
 window.addEventListener( "load" , function (){
 
     // ----------tags----------//
