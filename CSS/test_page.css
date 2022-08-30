@@ -176,7 +176,7 @@ article .title{
     margin-bottom: 35px;
 }
 /*===========form===========*/
-form{
+.article_text form{
     width: 100%;
     background-color: white;
     border-radius: 10px;
