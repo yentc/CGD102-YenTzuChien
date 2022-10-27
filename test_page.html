@@ -455,7 +455,7 @@
 
             var total = document.getElementsByTagName("input");
             var grade = 0;
-            var str ="";
+            
             for(var i=0; i<total.length; i++){
                 if(total[i].value == "yes"){
                     if(total[i].checked){
@@ -463,7 +463,15 @@
                     }
                 }
             }
-            alert('您的分數為:'+ grade+'分');
+            if(grade<4){
+                alert('您的分數為:'+ grade+'分'+'\n壓力指數還在能負荷的範圍。');
+            }else if(grade>=4 && grade<=5){
+                alert('您的分數為:'+ grade+'分'+'\n壓力蠻困擾你，雖能勉強應付，但必需認真學習壓力管理了。');
+            }else if(grade>=6 && grade<=8){
+                alert('您的分數為:'+ grade+'分'+'\n你的壓力很大，趕緊找專業心理諮商師或醫院的協助。');
+            }else if(grade>=9){
+                alert('您的分數為:'+ grade+'分'+'\n你的壓力已很嚴重，快到醫院找專業可信賴的醫師，讓醫師評估你的身心狀況。');
+            }
 
         });
         
