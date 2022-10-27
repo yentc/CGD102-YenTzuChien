@@ -219,7 +219,7 @@ form input:checked + label {
     background-color: var(--skyBlue-color);
     color: white;
 }
-.submit{
+#submit{
     background-color: var(--red-color);
     border: 0;
     padding: 8px 15px;
