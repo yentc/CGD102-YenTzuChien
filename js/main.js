@@ -1,11 +1,9 @@
 //by Tibame set up
 
 $(function(){
-    $("#go_top").on("click", function(e){
-      e.preventDefault();
-      $('html, body').animate({
-        scrollTop: 0
-      }, 750);
+    $("#go_top").on("click", function(){
+      $('html, body').animate({// 有些瀏覽器只支援html，有些只支援body 所以兩個都寫進去
+        scrollTop: 0}, 750);//750毫秒
     });
   // hamburger icon 的切換
   $("button.hamburger").on("click", function(){
